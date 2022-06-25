@@ -15,7 +15,7 @@ export default function Writing() {
         <Link href='https://www.kitapyurdu.com/kitap/erken-bulunmus-bir-intihar-mektubu-/561410.html'>
           Erken bulunmuş bir intihar mektubu
         </Link>
-        'nu 2017'de yazdım.
+        &apos;nu 2017&apos;de yazdım.
       </p>
       <p>Pandemide yayınlamak için yayınevlerine gönderdim. 2020 yılında ilk baskısı çıktı.</p>
       <h2>Blog</h2>
@@ -25,13 +25,13 @@ export default function Writing() {
       </p>
       <h2>Medium</h2>
       <p>
-        <Link href='https://safa.medium.com'>Medium</Link>'da genellikle yazılım (Frontend
+        <Link href='https://safa.medium.com'>Medium</Link>&apos;da genellikle yazılım (Frontend
         teknolojileri) üzerine yazılar yayınlıyorum.
       </p>
       <h2>Twitter</h2>
       <p>
         Mikrobloglar da her zaman ilgimi çekti. Uzun zamandır{' '}
-        <Link href='https://twitter.com/safa'>Twitter</Link>'da aktifim.
+        <Link href='https://twitter.com/safa'>Twitter</Link>&apos;da aktifim.
       </p>
     </div>
   )

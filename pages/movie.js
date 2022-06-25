@@ -18,7 +18,7 @@ export default function Movie() {
         </Link>{' '}
         filmimle International Short Film Festival Kalmthout adlı festivalde 2. seçildik.
       </p>
-      <p>Diğer kısa film projelerimi ise YouTube'da bulabilirsiniz.</p>
+      <p>Diğer kısa film projelerimi ise YouTube&apos;da bulabilirsiniz.</p>
       <h2>Tüketmek</h2>
       <p>İyi filmler ve diziler izlemeye özen gösteririm.</p>
       <p>
@@ -31,8 +31,8 @@ export default function Movie() {
         <Link href='http://www.imdb.com/list/ls003493446/'>favori film listesi</Link> hazırladım.
       </p>
       <p>
-        2011'de oluşturduğum bu liste o kadar ilgi gördü ki, Google'da "Safa'nın favori filmleri"
-        araması yapıldığında favori filmlerime ulaşılabiliyor.
+        2011&apos;de oluşturduğum bu liste o kadar ilgi gördü ki, Google&apos;da &quot;Safa&apos;nın
+        favori filmleri&quot; araması yapıldığında favori filmlerime ulaşılabiliyor.
       </p>
     </div>
   )

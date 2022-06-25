@@ -3,11 +3,11 @@ export default function Header() {
     <div>
       <h1>Kod</h1>
 
-      <p>"Yazılım" kelimesiyle ilkokulda 2004 yılında tanıştım.</p>
+      <p>&quot;Yazılım&quot; kelimesiyle ilkokulda 2004 yılında tanıştım.</p>
       <p>O sıralar Microsoft FrontPage ile basit web arayüzler yapmayı öğrendim.</p>
       <p>
         Sonrasında HTML, CSS ve JS üzerine geliştirmeler yaparak lise hayatıma başladım. Ticaret
-        Meslek Lisesi'ni seçmemin tek nedeni Bilgisayar Programcılığı bölümünün olmasıydı.
+        Meslek Lisesi&apos;ni seçmemin tek nedeni Bilgisayar Programcılığı bölümünün olmasıydı.
       </p>
       <p>
         Lise eğitimim sırasında C# ve asp.NET ile tanıştım. Desktop ve Web geliştirmeler yaptım. İlk
