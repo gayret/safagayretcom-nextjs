@@ -1,0 +1,116 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
+    Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: #222;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p {
+  color: gray;
+}
+
+p a {
+  color: skyblue;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-rows: 60px auto;
+  min-height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #fff;
+  padding: 1em 2em;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+
+main {
+  padding: 3em 0;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1em;
+}
+
+footer * {
+  cursor: pointer;
+}
+
+.profile-picture {
+  border-radius: 50%;
+  background-color: #fff;
+  margin-right: 1em;
+}
+
+.non-style {
+  list-style: none;
+  padding: 0;
+  line-height: 2;
+}
+
+.post {
+  display: flex;
+  gap: 1em;
+}
+
+.post .date {
+  color: #666;
+}
+
+.left {
+  color: skyblue;
+}
+
+li {
+  color: skyblue;
+}
+li:hover {
+  color: #fff;
+}
+
+.medium-posts {
+  margin-top: 2em;
+}
+
+.title a {
+  font-weight: 100;
+  font-size: 0.8em;
+  margin-left: 1em;
+}
+
+h2 {
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+  }
+}
