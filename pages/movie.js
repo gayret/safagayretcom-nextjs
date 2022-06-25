@@ -28,7 +28,7 @@ export default function Movie() {
       <p>Muhtelif saatlerde bir arkadışımın arayıp film önerisi istemesine alıştım.</p>
       <p>
         Belki de bunun için bir
-        <Link href='http://www.imdb.com/list/ls003493446/'>favori film listesi</Link> hazırladım.
+        <Link href='http://www.imdb.com/list/ls003493446/'> favori film listesi</Link> hazırladım.
       </p>
       <p>
         2011&apos;de oluşturduğum bu liste o kadar ilgi gördü ki, Google&apos;da &quot;Safa&apos;nın

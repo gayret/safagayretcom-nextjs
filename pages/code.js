@@ -1,3 +1,5 @@
+import Link from 'next/dist/client/link'
+
 export default function Header() {
   return (
     <div>
@@ -34,8 +36,9 @@ export default function Header() {
       <h2>Kariyer</h2>
       <p>Şimdilerde yoğun olarak VueJS ve NuxtJS projeler geliştiriyorum.</p>
       <p>
-        Bu websitesini de NextJS ile geliştirdim, kodlarına yakında oluşturacağım repodan
-        ulaşılabilir olacak.
+        Bu websitesini de NextJS ile geliştirdim, kodlarına{' '}
+        <Link href='https://github.com/gayret/safagayretcom-nextjs'>GitHub</Link>&apos;dan
+        ulaşılabilir.
       </p>
     </div>
   )
