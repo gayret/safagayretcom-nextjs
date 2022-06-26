@@ -51,7 +51,7 @@ function Home(props) {
   )
 }
 
-export async function getServerSideProps(context) {
+export async function getStaticProps(context) {
   const mediumPosts = await fetch(
     'https://api.factmaven.com/xml-to-json/?xml=https://safa.medium.com/feed'
   )
@@ -61,6 +61,7 @@ export async function getServerSideProps(context) {
     props: {
       mediumPosts: mediumPostsData.rss.channel.item,
     },
+    revalidate: 3600,
   }
 }
 
