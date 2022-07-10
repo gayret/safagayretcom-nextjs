@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import profilePicture from '../public/assets/profile.jpg'
-import dayjs from 'dayjs'
+import dateFormatter from '../helpers/dateFormatter'
 
 function Home(props) {
   return (
@@ -40,7 +40,7 @@ function Home(props) {
               <Link href={post.link}>
                 <div style={{ cursor: 'pointer' }}>
                   {post.title}
-                  <span className='date'> {dayjs(post.pubDate).format('DD MMM YY')}</span>
+                  <span className='date'> {dateFormatter(post.pubDate)}</span>
                 </div>
               </Link>
             </li>
