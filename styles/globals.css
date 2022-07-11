@@ -107,6 +107,23 @@ h2 {
   color: #666;
 }
 
+.boxes-movie {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2em;
+}
+
+.box-movie {
+  display: grid;
+  grid-template-columns: 200px 100px;
+  gap: 1em;
+}
+
+.box-movie img {
+  object-fit: contain;
+  cursor: pointer;
+}
+
 @media (max-width: 768px) {
   .header {
     display: flex;
