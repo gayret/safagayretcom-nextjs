@@ -32,7 +32,7 @@ export default function Header() {
         Profesyonel hayatım boyunca Frontend teknolojileri üzerine yoğunlaştım. VueJS ve NuxtJS
         teknolojilerinde uzmanlaştım.
       </p>
-      <p>Yakın gelecekte VueJS mentorluğu yapmaya başladım.</p>
+      <p>VueJS mentörlüğü yapmaya başladım.</p>
       <h2>Kariyer</h2>
       <p>Şimdilerde yoğun olarak VueJS ve NuxtJS projeler geliştiriyorum.</p>
       <p>
