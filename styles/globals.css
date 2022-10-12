@@ -82,25 +82,11 @@ footer * {
   color: #666;
 }
 
-.left {
-  color: skyblue;
-}
-
 li {
   color: skyblue;
 }
 li:hover {
   color: #fff;
-}
-
-.medium-posts {
-  margin-top: 2em;
-}
-
-.title a {
-  font-weight: 100;
-  font-size: 0.8em;
-  margin-left: 1em;
 }
 
 h2 {
@@ -128,6 +114,5 @@ h2 {
   .header {
     display: flex;
     flex-direction: column;
-    gap: 3em;
   }
 }
