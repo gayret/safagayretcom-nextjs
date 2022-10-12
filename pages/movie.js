@@ -1,5 +1,4 @@
 import Link from 'next/dist/client/link'
-import Image from 'next/image'
 
 export default function Movie(props) {
   return (
@@ -35,38 +34,6 @@ export default function Movie(props) {
         2011&apos;de oluşturduğum bu liste o kadar ilgi gördü ki, Google&apos;da &quot;Safa&apos;nın
         favori filmleri&quot; araması yapıldığında favori filmlerime ulaşılabiliyor.
       </p>
-
-      <div className='my-favorite-movies'>
-        <h2>Bazı favori filmlerim</h2>
-        <ul className='boxes-movie non-style'>
-          {props.favoriteMovies.map((movie) => (
-            <li key={movie.id}>
-              <div className='box-movie'>
-                <Link href={movie.url}>
-                  <Image
-                    src={movie.enclosure.url}
-                    alt={movie.title}
-                    title={movie.title}
-                    width={200}
-                    height={300}
-                  />
-                </Link>
-              </div>
-            </li>
-          ))}
-        </ul>
-      </div>
     </div>
   )
-}
-
-export async function getStaticProps(context) {
-  const fetchMovies = await fetch('https://rss.app/api/widget/wall/AZL3Vbh7qbOnK7z9')
-  const movies = await fetchMovies.json()
-  return {
-    props: {
-      favoriteMovies: movies.feed.items,
-    },
-    revalidate: 60000,
-  }
 }
