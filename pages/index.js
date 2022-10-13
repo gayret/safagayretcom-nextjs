@@ -73,6 +73,12 @@ function Home(props) {
           border-radius: 1em;
           padding: 0.6em 0.8em;
           margin-bottom: 1em;
+          transition: box-shadow 0.2s ease-in-out;
+        }
+
+        .post:hover {
+          box-shadow: 4px 4px 0 0px #555;
+          transition: box-shadow 0.2s ease-in-out;
         }
 
         .text {
