@@ -6,19 +6,29 @@ export default function Footer() {
   return (
     <footer>
       <Link href='https://twitter.com/safa'>
-        <i title='Twitter' className='ri-twitter-line'></i>
+        <a target='_blank'>
+          <i title='Twitter' className='ri-twitter-line'></i>
+        </a>
       </Link>
       <Link href='https://safa.medium.com'>
-        <i title='Medium' className='ri-medium-line'></i>
+        <a target='_blank'>
+          <i title='Medium' className='ri-medium-line'></i>
+        </a>
       </Link>
       <Link href='https://github.com/gayret'>
-        <i title='GitHub' className='ri-github-line'></i>
+        <a target='_blank'>
+          <i title='GitHub' className='ri-github-line'></i>
+        </a>
       </Link>
       <Link href='https://linkedin.com/in/safagayret'>
-        <i title='LinkedIn' className='ri-linkedin-line'></i>
+        <a target='_blank'>
+          <i title='LinkedIn' className='ri-linkedin-line'></i>
+        </a>
       </Link>
       <Link href='https://superpeer.com/gayret'>
-        <Image title='superpeer' width={100} src={SuperPeer} alt='superpeer' />
+        <a target='_blank'>
+          <Image title='superpeer' width={100} src={SuperPeer} alt='superpeer' />
+        </a>
       </Link>
     </footer>
   )

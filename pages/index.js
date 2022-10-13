@@ -29,21 +29,20 @@ function Home(props) {
       </div>
 
       <div className='medium-posts'>
-        <h3 className='title'>Son Makalelerim</h3>
+        <h3 className='title'>Son makalelerim</h3>
         <ul className='non-style'>
           {props.mediumPosts.map((post) => (
             <li className='post' key={post.title} title={post.category}>
               <Link href={post.link}>
                 <a>
-                  <div style={{ cursor: 'pointer' }}>
-                    {post.title}
-                    <span className='date'> {dateFormatter(post.pubDate)}</span>
-                  </div>
+                  <div style={{ cursor: 'pointer' }}>{post.title}</div>
+                  <span className='date'> {dateFormatter(post.pubDate)}</span>
+                  <div className='categories'> {JSON.stringify(post.category)}</div>
                 </a>
               </Link>
             </li>
           ))}
-          <li className='post'>
+          <li className='all-articles'>
             <Link href={'https://safa.medium.com'}>
               <a style={{ cursor: 'pointer' }}>Tüm makaleler</a>
             </Link>
@@ -73,7 +72,6 @@ function Home(props) {
           border: 1px solid #555;
           border-radius: 1em;
           padding: 0.6em 0.8em;
-          max-width: max-content;
           margin-bottom: 1em;
         }
 
@@ -96,8 +94,18 @@ function Home(props) {
         }
 
         ul.non-style {
-          max-width: 700px;
+          max-width: 600px;
           margin: auto;
+        }
+
+        .categories {
+          font-size: 0.8em;
+          color: #555;
+        }
+
+        .all-articles {
+          text-align: center;
+          margin-top: 1em;
         }
       `}</style>
     </div>

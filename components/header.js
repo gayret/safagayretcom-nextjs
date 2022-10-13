@@ -8,7 +8,7 @@ export default function Header() {
       <nav>
         <Link href='/code'>Kod</Link>
         <Link href='/movie'>Film</Link>
-        <Link href='/writing'>Yazı</Link>
+        <Link href='/writing'>Yazı / Kitap</Link>
       </nav>
     </header>
   )
