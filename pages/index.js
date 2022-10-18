@@ -58,7 +58,7 @@ function Home(props) {
           padding-bottom: 3em;
           box-shadow: inset 1px -1px 0 0 #000;
           border-radius: 1em;
-          width: 600px;
+          max-width: 600px;
           margin: auto;
         }
 
