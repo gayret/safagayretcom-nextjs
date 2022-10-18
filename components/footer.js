@@ -10,7 +10,7 @@ export default function Footer() {
         <Link href='https://github.com/gayret/safagayretcom-nextjs'>
           <a target='_blank'> GitHub</a>
         </Link>
-        'dan ulaşılabilir.
+        &apos;dan ulaşılabilir.
       </div>
       <div className='links'>
         <Link href='https://twitter.com/safa'>
