@@ -50,17 +50,6 @@ main {
   padding: 3em 0;
 }
 
-footer {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 1em;
-}
-
-footer * {
-  cursor: pointer;
-}
-
 .profile-picture {
   border-radius: 50%;
   background-color: #fff;

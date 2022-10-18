@@ -73,12 +73,13 @@ function Home(props) {
           border-radius: 1em;
           padding: 0.6em 0.8em;
           margin-bottom: 1em;
-          transition: box-shadow 0.2s ease-in-out;
+          background-color: #1c1c1c;
+          transition: all 0.2s ease-in-out;
         }
 
         .post:hover {
+          transform: translate(-4px, -4px);
           box-shadow: 4px 4px 0 0px #555;
-          transition: box-shadow 0.2s ease-in-out;
         }
 
         .text {
