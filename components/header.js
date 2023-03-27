@@ -25,7 +25,7 @@ export default function Header() {
           cursor: pointer;
           border: 1px solid #fff;
           border-radius: 0.5em;
-          padding: 0.5em 1em;
+          padding: 0.1em 0.4em 0.2em 0.4em;
         }
 
         .nav-item:hover {
