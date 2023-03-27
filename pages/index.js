@@ -26,30 +26,6 @@ function Home(props) {
           <p style={{ margin: 0 }}> ve yazılar yazarım.</p>
         </div>
       </div>
-
-      <div className='medium-posts'>
-        <h3 className='title'>Son makalelerim</h3>
-        <ul className='non-style'>
-          {props.mediumPosts.map((post) => (
-            <li className='post' key={post.title} title={post.tags}>
-              <Link href={post.url}>
-                <div>
-                  <a>
-                    <div style={{ cursor: 'pointer' }}>{post.title}</div>
-                    <span className='date'> {dateFormatter(post.published_at)}</span>
-                    <div className='categories'> {JSON.stringify(post.tags)}</div>
-                  </a>
-                </div>
-              </Link>
-            </li>
-          ))}
-          <li className='all-articles'>
-            <Link href={'https://safa.medium.com'}>
-              <a style={{ cursor: 'pointer' }}>Tüm makaleler</a>
-            </Link>
-          </li>
-        </ul>
-      </div>
       <style jsx>{`
         .header {
           display: flex;
@@ -71,51 +47,10 @@ function Home(props) {
           border: 3px solid #000;
         }
 
-        .post {
-          border: 1px solid #555;
-          border-radius: 1em;
-          padding: 0.6em 0.8em;
-          margin-bottom: 1em;
-          background-color: #1c1c1c;
-          transition: all 0.2s ease-in-out;
-        }
-
-        .post:hover {
-          transform: translate(-4px, -4px);
-          box-shadow: 4px 4px 0 0px #555;
-        }
-
-        .text {
-          color: skyblue;
-        }
-
-        .medium-posts {
-          padding-top: 1em;
-        }
-
-        .title {
-          text-align: center;
-        }
-
         .title a {
           font-weight: 100;
           font-size: 0.8em;
           margin-left: 1em;
-        }
-
-        ul.non-style {
-          max-width: 600px;
-          margin: auto;
-        }
-
-        .categories {
-          font-size: 0.8em;
-          color: #555;
-        }
-
-        .all-articles {
-          text-align: center;
-          margin-top: 1em;
         }
       `}</style>
     </div>
