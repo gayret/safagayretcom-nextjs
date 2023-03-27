@@ -9,8 +9,8 @@ function Home(props) {
       <div className='header'>
         <div className='image'>
           <Image
-            width={150}
-            height={150}
+            width={270}
+            height={270}
             className='profile-picture'
             src={profilePicture}
             alt='Profile picture'
@@ -21,10 +21,9 @@ function Home(props) {
           <h1>
             <span style={{ fontWeight: 'normal' }}>Ben</span> Safa Gayret
           </h1>
-
-          <div>Yazılım geliştiririm,</div>
-          <div>kısa film yönetirim</div>
-          <div> ve yazılar yazarım.</div>
+          <p style={{ margin: 0 }}>Yazılım geliştiririm,</p>
+          <p style={{ margin: 0 }}>kısa film yönetirim</p>
+          <p style={{ margin: 0 }}> ve yazılar yazarım.</p>
         </div>
       </div>
 
@@ -32,13 +31,15 @@ function Home(props) {
         <h3 className='title'>Son makalelerim</h3>
         <ul className='non-style'>
           {props.mediumPosts.map((post) => (
-            <li className='post' key={post.title} title={post.category}>
-              <Link href={post.link}>
-                <a>
-                  <div style={{ cursor: 'pointer' }}>{post.title}</div>
-                  <span className='date'> {dateFormatter(post.pubDate)}</span>
-                  <div className='categories'> {JSON.stringify(post.category)}</div>
-                </a>
+            <li className='post' key={post.title} title={post.tags}>
+              <Link href={post.url}>
+                <div>
+                  <a>
+                    <div style={{ cursor: 'pointer' }}>{post.title}</div>
+                    <span className='date'> {dateFormatter(post.published_at)}</span>
+                    <div className='categories'> {JSON.stringify(post.tags)}</div>
+                  </a>
+                </div>
               </Link>
             </li>
           ))}
@@ -63,8 +64,8 @@ function Home(props) {
         }
 
         .image {
-          width: 150px;
-          height: 150px;
+          width: 270px;
+          height: 270px;
           border-radius: 50%;
           overflow: hidden;
           border: 3px solid #000;
@@ -121,15 +122,35 @@ function Home(props) {
   )
 }
 
+let posts = []
 export async function getStaticProps(context) {
-  const mediumPosts = await fetch(
-    'https://api.factmaven.com/xml-to-json/?xml=https://safa.medium.com/feed'
-  )
-  const mediumPostsData = await mediumPosts.json()
+  const options = {
+    method: 'GET',
+    headers: {
+      'X-RapidAPI-Key': '270cedef62msh156ab317854adb5p1b1e8bjsne67ae12a76ce',
+      'X-RapidAPI-Host': 'medium2.p.rapidapi.com',
+    },
+  }
+
+  fetch('https://medium2.p.rapidapi.com/user/3ede4c648e44/articles', options)
+    .then((response) => response.json())
+    .then((response) => {
+      response.associated_articles.forEach(async (postId) => {
+        await fetch(`https://medium2.p.rapidapi.com/article/${postId}`, options)
+          .then((response) => response.json())
+          .then((post) => {
+            posts.push(post)
+          })
+      })
+    })
+    .catch((err) => console.error(err))
+    .finally(() => {
+      posts = posts.slice(0, 6)
+    })
 
   return {
     props: {
-      mediumPosts: mediumPostsData.rss.channel.item,
+      mediumPosts: posts,
     },
     revalidate: 3600,
   }
