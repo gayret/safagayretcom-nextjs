@@ -43,7 +43,7 @@ export default function Footer() {
         footer {
           display: flex;
           justify-content: space-between;
-          align-items: baseline;
+          align-items: flex-end;
           gap: 1em;
         }
         .copyrigth {
@@ -62,7 +62,8 @@ export default function Footer() {
         @media (max-width: 768px) {
           footer {
             flex-direction: column;
-            align-items: flex-end;
+            align-items: flex-start;
+            justify-content: flex-end;
           }
       `}</style>
     </footer>
