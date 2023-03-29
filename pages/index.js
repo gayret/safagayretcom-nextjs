@@ -2,11 +2,12 @@ import Image from 'next/image'
 import Link from 'next/link'
 import profilePicture from '../public/assets/profile.jpg'
 import dateFormatter from '../helpers/dateFormatter'
+import mediumPosts from '../data/mediumPosts.json'
 
-function Home(props) {
+function Home() {
   return (
     <div>
-      <div className='header'>
+      <div className='info'>
         <div className='image'>
           <Image
             width={270}
@@ -26,8 +27,18 @@ function Home(props) {
           <p style={{ margin: 0 }}> ve yazılar yazarım.</p>
         </div>
       </div>
+      <ul className='posts'>
+        <h3 style={{ textAlign: 'center' }}>Medium'daki son yazılarım</h3>
+        {mediumPosts.rss.channel.item.map((post) => (
+          <Link href={post.link}>
+            <li className='post'>
+              <p> {post.title.__cdata} </p>
+            </li>
+          </Link>
+        ))}
+      </ul>
       <style jsx>{`
-        .header {
+        .info {
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -47,48 +58,38 @@ function Home(props) {
           border: 3px solid #000;
         }
 
-        .title a {
-          font-weight: 100;
-          font-size: 0.8em;
-          margin-left: 1em;
+        ul {
+          margin: 0;
+          padding: 0;
+        }
+
+        .posts {
+          max-width: 600px;
+          margin: auto;
+          margin-top: 2em;
+        }
+
+        .post {
+          cursor: pointer;
+          padding: 0 1em;
+          display: flex;
+          align-items: center;
+          max-width: max-content;
+        }
+
+        .post:hover {
+          background-color: #33333e;
+        }
+
+        @media only screen and (max-width: 600px) {
+          .image {
+            width: 200px;
+            height: 200px;
+          }
         }
       `}</style>
     </div>
   )
-}
-
-let posts = []
-export async function getStaticProps(context) {
-  const options = {
-    method: 'GET',
-    headers: {
-      'X-RapidAPI-Key': '270cedef62msh156ab317854adb5p1b1e8bjsne67ae12a76ce',
-      'X-RapidAPI-Host': 'medium2.p.rapidapi.com',
-    },
-  }
-
-  fetch('https://medium2.p.rapidapi.com/user/3ede4c648e44/articles', options)
-    .then((response) => response.json())
-    .then((response) => {
-      response.associated_articles.forEach(async (postId) => {
-        await fetch(`https://medium2.p.rapidapi.com/article/${postId}`, options)
-          .then((response) => response.json())
-          .then((post) => {
-            posts.push(post)
-          })
-      })
-    })
-    .catch((err) => console.error(err))
-    .finally(() => {
-      posts = posts.slice(0, 6)
-    })
-
-  return {
-    props: {
-      mediumPosts: posts,
-    },
-    revalidate: 3600,
-  }
 }
 
 export default Home
