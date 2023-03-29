@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import profilePicture from '../public/assets/profile.jpg'
-import dateFormatter from '../helpers/dateFormatter'
 import mediumPosts from '../data/mediumPosts.json'
 
 function Home() {
@@ -30,7 +29,7 @@ function Home() {
       <ul className='posts'>
         <h3 style={{ textAlign: 'center' }}>Medium'daki son yazılarım</h3>
         {mediumPosts.rss.channel.item.map((post) => (
-          <Link href={post.link}>
+          <Link href={post.link} key={post.guid}>
             <li className='post'>
               <p> {post.title.__cdata} </p>
             </li>
