@@ -27,7 +27,7 @@ function Home() {
         </div>
       </div>
       <ul className='posts'>
-        <h3 style={{ textAlign: 'center' }}>Medium'daki son yazılarım</h3>
+        <h3 style={{ textAlign: 'center' }}>Medium&apos;daki son yazılarım</h3>
         {mediumPosts.rss.channel.item.map((post) => (
           <Link href={post.link} key={post.guid}>
             <li className='post'>
