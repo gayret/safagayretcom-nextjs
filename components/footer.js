@@ -13,6 +13,11 @@ export default function Footer() {
         &apos;dan ulaşılabilir.
       </div>
       <div className='links'>
+        <Link href='https://youtube.com/@tech-coll'>
+          <a target='_blank'>
+            <i title='YouTube' className='ri-youtube-line'></i>
+          </a>
+        </Link>
         <Link href='https://twitter.com/safa'>
           <a target='_blank'>
             <i title='Twitter' className='ri-twitter-line'></i>

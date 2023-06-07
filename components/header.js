@@ -9,11 +9,17 @@ export default function Header() {
         <Link href='/code'>
           <a className='nav-item'>Kod</a>
         </Link>
+
         <Link href='/movie'>
           <a className='nav-item'>Film</a>
         </Link>
+
         <Link href='/writing'>
           <a className='nav-item'>Yazı / Kitap</a>
+        </Link>
+
+        <Link href='https://youtube.com/@tech-coll'>
+          <a className='nav-item youtube'>YouTube</a>
         </Link>
       </nav>
       <style jsx>{`
@@ -31,6 +37,12 @@ export default function Header() {
         .nav-item:hover {
           background-color: #fff;
           color: #000;
+        }
+
+        .youtube {
+          background-color: #f00;
+          border: none;
+          font-weight: 600;
         }
       `}</style>
     </header>

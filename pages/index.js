@@ -4,6 +4,11 @@ import profilePicture from '../public/assets/profile.jpg'
 import mediumPosts from '../data/mediumPosts.json'
 
 function Home() {
+  function formatDate(date) {
+    const options = { year: 'numeric', month: 'short' }
+    return new Date(date).toLocaleDateString('tr-TR', options)
+  }
+
   return (
     <div>
       <div className='info'>
@@ -26,16 +31,48 @@ function Home() {
           <p style={{ margin: 0 }}> ve yazılar yazarım.</p>
         </div>
       </div>
-      <ul className='posts'>
-        <h3 style={{ textAlign: 'center' }}>Medium&apos;daki son yazılarım</h3>
-        {mediumPosts.rss.channel.item.map((post) => (
-          <Link href={post.link} key={post.guid}>
-            <li className='post'>
-              <p> {post.title.__cdata} </p>
-            </li>
-          </Link>
-        ))}
-      </ul>
+      <div className='contents'>
+        <div className='videos'>
+          <h2>Katıldığım video yayınlar</h2>
+          <iframe
+            width='560'
+            height='315'
+            src='https://www.youtube.com/embed/videoseries?list=PLY3mpMOY7G-fzfQMKbZnCwTsiFPA-yUgo'
+            title='YouTube video player'
+            frameborder='0'
+            allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+            allowfullscreen
+          ></iframe>
+          <iframe
+            width='560'
+            height='315'
+            src='https://www.youtube.com/embed/videoseries?list=PLY3mpMOY7G-cefEH8LVxzO95U7281FVI5'
+            title='YouTube video player'
+            frameborder='0'
+            allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <ul>
+          <h2>Teknoloji ile ilgili yazılarım</h2>
+          {mediumPosts.rss.channel.item.map((post) => (
+            <Link href={post.link} key={post.guid}>
+              <li className='post'>
+                <span>{formatDate(post.pubDate)}</span>
+                <a>
+                  {post.title.__cdata}
+                  <div>
+                    {post.category.map((category) => (
+                      <span className='category'>{category.__cdata}</span>
+                    ))}
+                  </div>
+                </a>
+              </li>
+            </Link>
+          ))}
+        </ul>
+      </div>
       <style jsx>{`
         .info {
           display: flex;
@@ -70,14 +107,27 @@ function Home() {
 
         .post {
           cursor: pointer;
-          padding: 0 1em;
-          display: flex;
-          align-items: center;
-          max-width: max-content;
+          display: grid;
+          padding: 0.5em 0;
+          grid-template-columns: 80px 1fr;
+        }
+
+        .post a {
+          color: #fff;
+          text-wrap: balance;
         }
 
         .post:hover {
           background-color: #33333e;
+        }
+
+        .category {
+          margin-right: 0.5em;
+          color: #222;
+        }
+
+        .post:hover .category {
+          color: skyblue;
         }
 
         @media only screen and (max-width: 600px) {
