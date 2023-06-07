@@ -64,7 +64,9 @@ function Home() {
                   {post.title.__cdata}
                   <div>
                     {post.category.map((category) => (
-                      <span className='category'>{category.__cdata}</span>
+                      <span key={category.__cdata} className='category'>
+                        {category.__cdata}
+                      </span>
                     ))}
                   </div>
                 </a>
