@@ -33,7 +33,7 @@ function Home() {
       </div>
       <div className='contents'>
         <div className='videos'>
-          <h2>Katıldığım video yayınlar</h2>
+          <h2>Yer aldığım bazı video yayınlar</h2>
           <iframe
             width='560'
             height='315'
