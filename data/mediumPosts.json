@@ -7,18 +7,74 @@
       "description": {
         "__cdata": " Stories by Safa Gayret on Medium "
       },
-      "link": ["https://medium.com/@safa?source=rss-3ede4c648e44------2", "", ""],
+      "link": [
+        "https://medium.com/@safa?source=rss-3ede4c648e44------2",
+        "",
+        ""
+      ],
       "image": {
         "url": "https://cdn-images-1.medium.com/fit/c/150/150/1*j_Ek9T7Vk87uS0UgvjBufQ.jpeg",
         "title": "Stories by Safa Gayret on Medium",
         "link": "https://medium.com/@safa?source=rss-3ede4c648e44------2"
       },
       "generator": "Medium",
-      "lastBuildDate": "Wed, 07 Jun 2023 08:37:10 GMT",
+      "lastBuildDate": "Thu, 20 Jul 2023 06:20:00 GMT",
       "webMaster": {
         "__cdata": " yourfriends@medium.com "
       },
       "item": [
+        {
+          "title": {
+            "__cdata": " Kodu herkes yazar, mesele… "
+          },
+          "link": "https://safa.medium.com/kodu-herkes-yazar-mesele-5068e681dcf5?source=rss-3ede4c648e44------2",
+          "guid": "https://medium.com/p/5068e681dcf5",
+          "category": [
+            {
+              "__cdata": " coding "
+            },
+            {
+              "__cdata": " porgramming "
+            }
+          ],
+          "creator": {
+            "__cdata": " Safa Gayret "
+          },
+          "pubDate": "Thu, 20 Jul 2023 05:30:43 GMT",
+          "updated": "2023-07-20T05:30:43.707Z",
+          "encoded": {
+            "__cdata": " <figure><img alt=\"\" src=\"https://cdn-images-1.medium.com/max/626/0*EDw847chGor9pRYW.jpg\" /><figcaption>Görsel kaynağı: <strong>Freepik</strong></figcaption></figure><p>Teknolojinin hızla geliştiği, dijital dünyanın hemen her yönünün hayatımızı etkilediği bir çağdayız. Bu gelişmelerin ardında ise yazılım dünyasının yeri ve önemi giderek artıyor. Yazılım, hayatımızı kolaylaştıran, işimizi hızlandıran ve dünyayla bağlantımızı güçlendiren temel unsurlardan biri haline geldi. Yazılımın merkezinde ise “kod” yer alıyor.</p><p><em>“Kodu herkes yazar”</em> yazılım alanında çalışanların sıkça kullandığı ve duyduğu bir sözdür. Bu sözün altında tespitler, yakınmalar yatar.</p><p>Günümüzde kod yazmak, herkes için ulaşılabilir ve öğrenilebilir bir beceri. Ancak, gerçek mesele bu ifadenin ardında yatan önemli detaylar ve kod yazımının gerektirdiği düşünce süreçleridir.</p><h3>Herkesin kod yazabilmesinin gücü</h3><p>Teknoloji işlerimizi otomatikleştiriyor ve hızlandırıyor. İnternet, akıllı telefonlar, giyilebilir cihazlar ve daha pek çok teknolojik cihaz sayesinde dünya bilgiye daha kolay ulaşılabilir hale geldi. Bu noktada, kod yazabilme becerisi herkesin dijital dünyaya katılmasını sağlar. Bir şeyleri daha iyi anlamak, ihtiyaçlarına özel çözümler üretmek veya bir fikri hayata geçirmek için kodlama gücünden yararlanmak mümkündür.</p><h3>Kodlama öğrenmenin önemi</h3><p>Kod yazmak, sadece yazılım mühendisleri, bilgisayar programcıları için değil, aynı zamanda çocuklar, öğrenciler, tasarımcılar, iş insanları ve hatta sanatçılar için bile önemli bir yetenek haline geldi. Temel kodlama bilgisi, mantıklı düşünme, problem çözme ve yaratıcılık gibi genel becerileri geliştirir. Kodlama öğrenmek, zihni bir bulmaca çözmek gibi çalıştırır ve bu da insanların daha analitik ve eleştirel düşünmelerine yardımcı olur.</p><h3>Kod yazmanın zorlukları</h3><p>Ancak, kod yazmak sadece kolaylık ve yaratıcılıkla dolu bir süreç değildir. Zorlukları da vardır. Bir programın veya projenin mantıklı ve düzgün çalışabilmesi için, kodun dikkatli bir şekilde yazılması ve test edilmesi gerekir. Hatalar yapılabilir ve bunları düzeltmek için sabır ve özenli çalışma gerekebilir. Bununla birlikte, herkesin kod yazabilmesi için çeşitli öğrenme kaynakları, kodlama platformları ve topluluklar bulunmaktadır. Önemli olan, sürekli öğrenmeye ve gelişmeye açık olmaktır.</p><p>Kodu herkes yazar, ancak mesele yazılan kodun ne kadar <strong>etkili </strong>ve <strong>verimli </strong>olduğudur. Kod yazmak, herkesin ulaşabileceği bir beceri olmasına rağmen, kodlama sürecinin arkasında yatan düşünce ve <strong>planlama </strong>süreçlerini önemsemek gereklidir. Kodlama becerisini geliştirerek, dijital dünyaya daha etkili bir şekilde katılabilir, hayatınızı kolaylaştırabilir ve çevrenizdeki insanlara değer katabilirsiniz. Kod yazmak bir süreçtir ve her adım öğrenme ve deneyim kazanma fırsatı sunar.</p><img src=\"https://medium.com/_/stat?event=post.clientViewed&referrerSource=full_rss&postId=5068e681dcf5\" width=\"1\" height=\"1\" alt=\"\"> "
+          }
+        },
+        {
+          "title": {
+            "__cdata": " Commit Mesajları: Kodlama Sürecinde İletişimin Önemi "
+          },
+          "link": "https://safa.medium.com/commit-mesajlar%C4%B1-kodlama-s%C3%BCrecinde-i%CC%87leti%C5%9Fimin-%C3%B6nemi-a5ed4539b087?source=rss-3ede4c648e44------2",
+          "guid": "https://medium.com/p/a5ed4539b087",
+          "category": [
+            {
+              "__cdata": " development "
+            },
+            {
+              "__cdata": " message "
+            },
+            {
+              "__cdata": " commit "
+            },
+            {
+              "__cdata": " git "
+            }
+          ],
+          "creator": {
+            "__cdata": " Safa Gayret "
+          },
+          "pubDate": "Fri, 14 Jul 2023 12:02:09 GMT",
+          "updated": "2023-07-14T12:02:09.739Z",
+          "encoded": {
+            "__cdata": " <h3>Kodlama süreci, bir yazılım projesinin hayata geçirilmesinde en önemli adımlardan biridir. Ancak, projenin büyüklüğü ve karmaşıklığı arttıkça, bu süreçte iletişim ve takip etme zorluğu ortaya çıkabilir. İyi yazılmış ve açıklayıcı commit mesajları, geliştiriciler arasında etkili bir iletişim sağlar ve kod tabanının yönetimini kolaylaştırır.</h3><figure><img alt=\"\" src=\"https://cdn-images-1.medium.com/max/626/0*ouniGY1iUXZpxqkO.jpg\" /><figcaption>Görsel kaynağı: <strong>freepik.com</strong></figcaption></figure><p>Bu yazıda, commit mesajlarının neden önemli olduğunu ve doğru bir şekilde nasıl yazılacağını ele alacağız.</p><h3>Commit Mesajlarının Önemi</h3><p>Commit mesajları, her bir kod değişikliğinin amacını ve içeriğini açıklar. İyi yazılmış bir commit mesajı, projede çalışan diğer geliştiricilere ve gelecekteki sürdürücülere hangi değişikliklerin yapıldığını anlamalarını sağlar. Aynı zamanda hataları düzeltmek, özellikleri eklemek veya performansı iyileştirmek gibi değişikliklerin nedenini açıklar. Bu, projenin sürekliliği ve işbirliği açısından kritik bir öneme sahiptir.</p><h3>Doğru Commit Mesajı Yazma İlkeleri</h3><ul><li><strong>Açık ve sade</strong>: Commit mesajı, değişikliğin ne yaptığını öz ve anlaşılır bir şekilde açıklamalıdır. Kısa, net ve öz olmalı, aynı zamanda projenin diğer bileşenleriyle tutarlı bir dil kullanmalıdır.</li><li><strong>Başlık ve detay</strong>: Commit mesajları, bir başlık ve gerekirse daha ayrıntılı bir açıklama içermelidir. Başlık, değişikliğin özünü kapsamalıdır, ayrıntılar ise daha fazla bilgi sağlamak için kullanılabilir.</li><li><strong>İyi örnekler</strong>: “Birleştirme çakışmasını çöz”, “Kullanıcı ara yüzünü iyileştir”, “Veri tabanı bağlantısını optimize et” gibi commit mesajları açık ve anlaşılırdır.</li></ul><h3>Commit mesajı aslında bir diktedir</h3><p>Geçmiş zamanlı bir üslupla commit mesajları yazmak en sık yapılan hatalardan. Örneğin, “Butonun rengi mavi olarak değiştirildi” bunun yerine emir kipi ile mesaj yazmak daha çok kabul görmüş bir standarttır.</p><p>En yaygın doğru kullanım, “<strong>Değiştir: Butonun rengini mavi</strong>” veya “<strong>Butonun rengini mavi olarak değiştir</strong>”</p><p><strong>Kötü örnek</strong>:<strong> </strong>“Düzelt”<br>Bu commit mesajı, hiçbir bilgi vermediği için yetersizdir. Hangi hatanın düzeltildiği veya hangi değişikliklerin yapıldığı belirtilmemiştir.</p><p><strong>İyi örnek</strong>: “Giriş sayfasında düzelt: giriş yapıldıktan sonra kullanıcı oturum bilgilerini doğru şekilde işlemle”</p><p>Bu commit mesajı, değişikliğin ne olduğunu ve neden yapıldığını net bir şekilde açıklar. Hatanın yerini, etkilediği sayfayı ve yapılan düzeltmeyi belirtir.</p><h3>İletişim ve Takip Etme</h3><p>Commit mesajları, kodun evrimini takip etmek için kullanılır. Projede çalışan diğer geliştiriciler, geçmiş değişiklikleri inceleyerek neden, nasıl ve ne zaman değişiklikler yapıldığını anlayabilirler. Ayrıca, commit mesajları gelecekteki sorunları giderme veya geriye dönme ihtiyacı olduğunda referans oluşturur.</p><p>Sonuç olarak commit mesajları, bir yazılım projesinin sağlıklı bir şekilde yönetilmesinde ve geliştiriciler arasındaki iletişimin sürdürülmesinde önemli bir rol oynar. Doğru bir şekilde yazılan commit mesajları, projenin geçmişini ve değişikliklerin nedenlerini açıklar, hataları düzeltmeye yardımcı olur ve gelecekteki çalışmalara rehberlik eder. Bu nedenle, geliştiricilerin commit mesajlarını önemsemesi ve doğru bir şekilde yazmasını sağlaması gerekmektedir.</p><p><em>Bu yazı hazırlanırken yer yer ChatGPT’den faydalanılmıştır.</em></p><img src=\"https://medium.com/_/stat?event=post.clientViewed&referrerSource=full_rss&postId=a5ed4539b087\" width=\"1\" height=\"1\" alt=\"\"> "
+          }
+        },
         {
           "title": {
             "__cdata": " Bazen çalışmak içinden gelmez "
@@ -225,58 +281,6 @@
           "updated": "2022-07-26T11:13:21.746Z",
           "encoded": {
             "__cdata": " <h4>Web uygulama geliştirirken, kullanıcının sayfayı yenilemesini beklemeksizin yeni bilgilerden haberdar olmasını gerektiren senaryolarla karşılaşırız. Bu durumlarda başvurduğumuz yöntemlerin başında WebSocket gelir.</h4><p>WebSocket’in oluşturduğu iletişim kanalları sayesinde, kullanıcının herhangi bir istekte bulunmasını beklemeksizin, ekranına yeni bilgiyi gönderebiliriz. Yazışma (<em>WhatsApp, Messenger</em> vb.) uygulamalarının tamamı bu standart ile çalışır.</p><figure><img alt=\"\" src=\"https://cdn-images-1.medium.com/max/668/1*H_yjD_g2PN5CnwDWTJTxAg.png\" /></figure><p><strong>Live Demo</strong>: <a href=\"https://websocket-vuejs.netlify.app/\">https://websocket-vuejs.netlify.app/</a></p><p><strong>GitHub Repo</strong>: <a href=\"https://github.com/gayret/websocket-vuejs\">https://github.com/gayret/websocket-vuejs</a></p><h3>Bir WebSocket kanalına nasıl bağlanılır?</h3><p>İhtiyaç duyacağımız tek şey <em>ws://</em> veya <em>wss://</em> protokolü ile başlayan bir url. Bu url, ilgili kanala doğrudan erişmemizi sağlayacak.</p><p>WebSocket bağlantısı kurmak için çeşitli hazır paketler var ancak mevcut senaryoda üçüncü parti bir pakete ihtiyacımız yok. JavaScript’in sağladığı WebSocket adlı reserved class, tüm aksiyonlarımızı karşılayabiliyor.</p><pre>const socket = new WebSocket(&#39;BURAYA WEBSOCKET URL&#39;)</pre><p>Bu tanımlamayı yaptıktan sonra gelen response’ları yakalamak için <strong>onmessage </strong>fonksiyonunu kullanırız.</p><pre>socket.onmessage = (event) =&gt; {<br> state.responses.push(event.data)<br>}</pre><p>Artık her yeni bilgi, state’imizdeki responses array’imize kaydedilir.</p><p>Mesaj göndermek için ise <strong>send </strong>fonksiyonunu kullanırız.</p><pre>socket.send(&#39;Gönderilecek mesaj&#39;)</pre><p>Bağlantıyı kapatmak için <strong>close </strong>fonksiyonunu kullanırız.</p><pre>socket.close()</pre><p>Bağlantının kapandığını yakalamak için <strong>onclose</strong>,</p><pre>socket.onclose = () =&gt; {<br> console.log(&#39;WebSocket closed&#39;)<br> state.socketConnected = false<br>}</pre><p>Yaşanabilecek hataları yakalamak için <strong>onerror </strong>fonksiyonunu kullanırız.</p><pre>socket.onerror = (error) =&gt; {<br> console.error(error)<br>}</pre><p>Hepsi bu kadar.</p><img src=\"https://medium.com/_/stat?event=post.clientViewed&referrerSource=full_rss&postId=adc7f29424f2\" width=\"1\" height=\"1\" alt=\"\"> "
-          }
-        },
-        {
-          "title": {
-            "__cdata": " VueJS’te TailwindCSS ile Dark Mode ayarı nasıl yapılır "
-          },
-          "link": "https://safa.medium.com/vuejste-tailwindcss-ile-dark-mode-ayar%C4%B1-nas%C4%B1l-yap%C4%B1l%C4%B1r-e11008ef9672?source=rss-3ede4c648e44------2",
-          "guid": "https://medium.com/p/e11008ef9672",
-          "category": [
-            {
-              "__cdata": " dark-mode "
-            },
-            {
-              "__cdata": " vuejs "
-            },
-            {
-              "__cdata": " tailwind-css "
-            }
-          ],
-          "creator": {
-            "__cdata": " Safa Gayret "
-          },
-          "pubDate": "Thu, 07 Jul 2022 17:48:06 GMT",
-          "updated": "2022-07-07T17:55:29.944Z",
-          "encoded": {
-            "__cdata": " <h4>Web uygulamalarına eklenen renk değiştirme opsiyonu son zamanlarda kullanıcı deneyimi (UX) standartlarının bir parçası haline geldi. Eğer projenizde Tailwind CSS Framework’ü kullanıyorsanız bunu ayarlamak çok kolay.</h4><figure><img alt=\"\" src=\"https://cdn-images-1.medium.com/max/637/1*Ud17AFgFSqmsbw61e7BG5A.png\" /></figure><p><em>Bir VueJS projesine Tailwind CSS’in nasıl install edileceğini </em><a href=\"https://safa.medium.com/tailwind-css-vite-ile-olu%C5%9Fturulmu%C5%9F-vuejs-3e-nas%C4%B1l-kurulur-a92ee61c3ec5\"><em>önceki yazılarımda</em></a><em> açıklamıştım. Tailwind CSS ve GitHub Copilot’u birlikte kullanarak kendi UI standartlarınızı yapay zekadan yardım alarak nasıl kısa sürede tanımlayacağınızı da </em><a href=\"https://safa.medium.com/b%C4%B1rak%C4%B1n-ui%C4%B1-yapay-zeka-yazs%C4%B1n-df9afe7e75fe\"><em>yine başka bir yazımda</em></a><em> açıklamıştım.</em></p><p>Live Demo: <a href=\"https://tailwind-css-vuejs-dark-mode.netlify.app/\">https://tailwind-css-vuejs-dark-mode.netlify.app/</a></p><p>GitHub Repo: <a href=\"https://github.com/gayret/tailwind-css-vuejs-dark-mode\">https://github.com/gayret/tailwind-css-vuejs-dark-mode</a></p><h3>Hadi başlayalım</h3><p>Bilindiği üzere Tailwind CSS, reserved class’larla UI tasarımı yönetmemizi sağlayan bir CSS Framework. Dolayısıyla Dark Mode yönetimini de yine class’larla yapacağız.</p><p>Öncelikle Dark Mode yönetimini class ile yapacağımızı tailwind.config.js içerisinde belirtelim.</p><pre><strong>tailwind.config.js</strong></pre><pre>module.exports = {<br> darkMode: &#39;class&#39;,<br>}</pre><p>Dark Mode’a geçildiğindebody arka planının tamamına koyu bir gri rengi atamak istediğimizde aşağıdaki gibi uygulayabiliriz.</p><pre><strong>index.html</strong></pre><pre>&lt;body class=&quot;bg-white dark:bg-gray-800&quot;&gt;<br> &lt;div id=&quot;app&quot;&gt;&lt;/div&gt;<br> &lt;script type=&quot;module&quot; src=&quot;/src/main.js&quot;&gt;&lt;/script&gt;<br>&lt;/body&gt;</pre><p>Böylece projemizin varsayılan arka plan rengini white olarak atadık. Dark Mode’a geçildikten sonraki arka plan rengini ise gray-800 diye kodlanan koyu bir gri yaptık.</p><p>Ayarladığımız bu geçişi görmek için yapmamız gereken tek şey, geçişi tetiklemek. Bunun için toggleTheme adlı bir method oluşturalım.</p><pre>const toggleTheme = () =&gt; {<br> state.theme = state.theme === &#39;light&#39; ? &#39;dark&#39; : &#39;light&#39;<br> if (state.theme === &#39;dark&#39;) {<br> document.documentElement.classList.add(&#39;dark&#39;)<br> } else {<br> document.documentElement.classList.remove(&#39;dark&#39;)<br> }<br>}</pre><p>İsteğe bağlı olarak theme bilgisini localStorage’da da tutabiliriz, bunu yaparsak kullanıcının sonraki oturumunda Theme Mode bilgisi hatırlanır ve kullanıcı bıraktığı gibi bulur.</p><p>Bu method’u bir button ile tetikleyebiliriz.</p><pre>&lt;button <a href=\"http://twitter.com/click\">@click</a>=&quot;toggleTheme&quot;&gt;<br> {{ state.theme === &#39;light&#39; ? &#39;Dark&#39; : &#39;Light&#39; }}<br>&lt;/button&gt;</pre><p><strong>Hepsi bu kadar.</strong> Artık dark: ön ekiyle birlikte ekleyeceğiniz tüm Tailwind CSS özellikleri, kullanıcı Dark Mode’a geçtiğinde aktif olacak.</p><img src=\"https://medium.com/_/stat?event=post.clientViewed&referrerSource=full_rss&postId=e11008ef9672\" width=\"1\" height=\"1\" alt=\"\"> "
-          }
-        },
-        {
-          "title": {
-            "__cdata": " Parent Component ile Child Component arasında v-model ilişkisi kurmak "
-          },
-          "link": "https://safa.medium.com/parent-component-ile-child-component-aras%C4%B1nda-v-model-ili%C5%9Fkisi-kurmak-859db2ee7d79?source=rss-3ede4c648e44------2",
-          "guid": "https://medium.com/p/859db2ee7d79",
-          "category": [
-            {
-              "__cdata": " two-way-data-binding "
-            },
-            {
-              "__cdata": " vuejs "
-            },
-            {
-              "__cdata": " custom-component "
-            }
-          ],
-          "creator": {
-            "__cdata": " Safa Gayret "
-          },
-          "pubDate": "Sat, 02 Jul 2022 13:34:36 GMT",
-          "updated": "2022-07-02T13:34:36.354Z",
-          "encoded": {
-            "__cdata": " <h4>VueJS’te componentler arasında iletişim kurmanın onlarca yolu var. v-model bu yollardan oldukça kullanışlı olanı. HTML inputlardaki bilgileri reaktif bir şekilde yakalamak için v-model kullanarak ‘two way binding’ kurarız. Peki HTML input dışında kendi oluşturduğumuz componentle de v-model ile iletişim kurabilir miyiz, evet.</h4><figure><img alt=\"\" src=\"https://cdn-images-1.medium.com/max/900/1*zHeuV1WJzgfTCbOesqEDXA.png\" /></figure><figure><img alt=\"\" src=\"https://cdn-images-1.medium.com/max/208/1*a0wjUB-cywfCIsmTmgC5Rg.png\" /></figure><p>Senaryo gereği, tüm HTML inputları sarmalayan bir Child Componente ihtiyacımız olsun. Örnek olması amacıyla Parent’ta input kullanacağımız zaman, klasik HTML input kullanmak yerine kendi oluşturduğumuz &lt;child /&gt; elementini kullanmayı arzu ediyoruz.</p><p><strong>Canlı demo</strong>: <a href=\"https://vue-parent-child-component-vmodel.netlify.app/\">https://vue-parent-child-component-vmodel.netlify.app/</a></p><p><strong>GitHub repo</strong>: <a href=\"https://github.com/gayret/vue-parent-child-component-vmodel\">https://github.com/gayret/vue-parent-child-component-vmodel</a></p><h3>Hadi başlayalım</h3><p>Öncelikle <strong>components </strong>klasörü altında <strong>Child.vue</strong> adlı bir dosya oluşturalım.</p><p>VueJS, parent componentle iletişim kuracak child componentin modelValue adında bir prop bekliyor olmasını istiyor. <strong>modelValue </strong>adlı prop üst componentte v-model ile bağlanmış state ile doğrudan ilişki kurabiliyor.</p><pre><strong>Child.vue</strong></pre><pre>&lt;script setup&gt;<br> const props = defineProps({<br> modelValue: String,<br> })<br>&lt;/script&gt;</pre><p>Yakaladığımız bu prop ile <strong>Child.vue</strong> içerisinde oluşturacağımız reaktif state’i ilişkilendirelim.</p><pre>const value = ref(props.modelValue)</pre><p>value adlı state’imizi template içerisindeki bir input’la two way binding yapalım.</p><pre>&lt;template&gt;<br> &lt;input v-model=&quot;value&quot; /&gt;<br>&lt;/template&gt;</pre><p>Böylece Child.vue içerisindeki input, modelValue adlı prop’taki bilgiyle eşitlendi. Ancak henüz bu input içerisindeki bilginin değişimini Parent Component’e iletmiyoruz. Input’taki her değişimi takip etmek için VueJS’in watch reserved fonksiyonunu kullanabileceğimiz gibi, input’a @input eventListener’ı da ekleyerek aynı sonuca ulaşabiliriz. Bu örnekte watch ile yapıyorum.</p><p>Input’taki her değişimi Parent’a dağıtmanın tek yolu emit etmek. Bunun için emit fonksiyonunu define edelim. update:modelValue Parent Component tarafından otomatik olarak yakalanır.</p><pre>const emit = defineEmits([&#39;update:modelValue&#39;])</pre><p>Artık watch ile her değişimi Parent Component’e dağıtabiliriz.</p><pre>watch(value, (newVal) =&gt; {<br> emit(&#39;update:modelValue&#39;, newVal)<br>})</pre><p><strong>Hepsi bu kadar</strong>, oluşturduğumuz Child adlı Component’i herhangi bir Component içerisine import edip v-model ile iletişim kurdurabiliriz.</p><pre><strong>Parent.vue</strong></pre><pre>&lt;child v-model=&quot;someThing&quot; /&gt;</pre><p><strong>GitHub repo</strong>: <a href=\"https://github.com/gayret/vue-parent-child-component-vmodel\">https://github.com/gayret/vue-parent-child-component-vmodel</a></p><img src=\"https://medium.com/_/stat?event=post.clientViewed&referrerSource=full_rss&postId=859db2ee7d79\" width=\"1\" height=\"1\" alt=\"\"> "
           }
         }
       ]
