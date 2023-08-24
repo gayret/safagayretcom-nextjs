@@ -1,14 +1,8 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import profilePicture from '../public/assets/profile.jpg'
-import mediumPosts from '../data/mediumPosts.json'
 
 function Home() {
-  function formatDate(date) {
-    const options = { year: 'numeric', month: 'short' }
-    return new Date(date).toLocaleDateString('tr-TR', options)
-  }
-
   return (
     <div>
       <div className='welcome'>
