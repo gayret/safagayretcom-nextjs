@@ -3,7 +3,7 @@ export default function Header() {
   return (
     <header>
       <div className='logo'>
-        <Link href='/'>SG</Link>
+        <Link href='/'>Safa</Link>
       </div>
       <nav>
         <Link href='/code'>
@@ -16,10 +16,6 @@ export default function Header() {
 
         <Link href='/writing'>
           <a className='nav-item'>Yazı / Kitap</a>
-        </Link>
-
-        <Link href='https://youtube.com/@tech-coll'>
-          <a className='nav-item youtube'>YouTube</a>
         </Link>
       </nav>
       <style jsx>{`

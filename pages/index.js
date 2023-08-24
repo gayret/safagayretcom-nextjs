@@ -11,89 +11,100 @@ function Home() {
 
   return (
     <div>
-      <div className='info'>
-        <div className='image'>
-          <Image
-            width={270}
-            height={270}
-            className='profile-picture'
-            src={profilePicture}
-            alt='Profile picture'
-          />
-        </div>
+      <div className='welcome'>
+        <div className='info'>
+          <div className='image'>
+            <Image
+              width={270}
+              height={270}
+              className='profile-picture'
+              src={profilePicture}
+              alt='Profile picture'
+            />
+          </div>
+          <div className='text'>
+            <h1 className='name'>Safa Gayret</h1>
+            <span className='role'>Frontend Developer</span>
+            <div className='description'>
+              <p>Lise ve Üniversite&apos;de Bilgisayar Programcılığı okudum.</p>
+              <p>Uzmanlık alanım JavaScript, VueJS, ReactJS, HTML ve CSS.</p>
+            </div>
 
-        <div className='text'>
-          <h1>
-            <span style={{ fontWeight: 'normal' }}>Ben</span> Safa Gayret
-          </h1>
-          <p style={{ margin: 0 }}>Yazılım geliştiririm,</p>
-          <p style={{ margin: 0 }}>kısa film yönetirim</p>
-          <p style={{ margin: 0 }}> ve yazılar yazarım.</p>
-        </div>
-      </div>
-      <div className='contents'>
-        <div className='videos'>
-          <h2>Katıldığım video yayınlar</h2>
-          <iframe
-            width='560'
-            height='315'
-            src='https://www.youtube.com/embed/videoseries?list=PLY3mpMOY7G-fzfQMKbZnCwTsiFPA-yUgo'
-            title='YouTube video player'
-            frameBorder='0'
-            allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-            allowFullScreen
-          ></iframe>
-          <iframe
-            width='560'
-            height='315'
-            src='https://www.youtube.com/embed/videoseries?list=PLY3mpMOY7G-cefEH8LVxzO95U7281FVI5'
-            title='YouTube video player'
-            frameBorder='0'
-            allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-            allowFullScreen
-          ></iframe>
-        </div>
-
-        <ul>
-          <h2>Teknoloji ile ilgili yazılarım</h2>
-          {mediumPosts.rss.channel.item.map((post) => (
-            <Link href={post.link} key={post.guid}>
-              <li className='post'>
-                <span>{formatDate(post.pubDate)}</span>
-                <a>
-                  {post.title.__cdata}
-                  <div>
-                    {post.category.map((category) => (
-                      <span key={category.__cdata} className='category'>
-                        {category.__cdata}
-                      </span>
-                    ))}
-                  </div>
+            <div className='links'>
+              <Link href='https://youtube.com/@tech-coll'>
+                <a target='_blank'>
+                  <i title='YouTube' className='ri-youtube-line'></i>
                 </a>
-              </li>
-            </Link>
-          ))}
-        </ul>
+              </Link>
+              <Link href='https://twitter.com/safa'>
+                <a target='_blank'>
+                  <i title='Twitter' className='ri-twitter-line'></i>
+                </a>
+              </Link>
+              <Link href='https://safa.medium.com'>
+                <a target='_blank'>
+                  <i title='Medium' className='ri-medium-line'></i>
+                </a>
+              </Link>
+              <Link href='https://github.com/gayret'>
+                <a target='_blank'>
+                  <i title='GitHub' className='ri-github-line'></i>
+                </a>
+              </Link>
+              <Link href='https://linkedin.com/in/safagayret'>
+                <a target='_blank'>
+                  <i title='LinkedIn' className='ri-linkedin-line'></i>
+                </a>
+              </Link>
+            </div>
+          </div>
+        </div>
       </div>
       <style jsx>{`
+        .welcome {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 80vh;
+        }
+
         .info {
           display: flex;
-          flex-direction: column;
           align-items: center;
-          text-align: center;
-          padding-bottom: 3em;
-          box-shadow: inset 1px -1px 0 0 #000;
+          gap: 2em;
+          padding: 2em;
+          box-shadow: inset 0px 0px 1px 1px rgba(255, 255, 255, 0.1);
           border-radius: 1em;
-          max-width: 600px;
-          margin: auto;
+          max-width: 700px;
+          transition: all 1s;
+        }
+
+        .info:hover {
+          box-shadow: inset -1px -1px 1px 0px rgba(255, 255, 255, 0.3);
         }
 
         .image {
-          width: 270px;
-          height: 270px;
+          width: 200px;
+          aspect-ratio: 1 / 1;
           border-radius: 50%;
           overflow: hidden;
-          border: 3px solid #000;
+        }
+
+        .name {
+          margin-block: 0;
+        }
+
+        .role {
+          color: rgba(255, 255, 255, 0.7);
+          font-weight: 100;
+        }
+
+        .description {
+          margin-block: 2em;
+        }
+
+        .description p {
+          margin-block: 0;
         }
 
         ul {
@@ -132,10 +143,18 @@ function Home() {
           color: skyblue;
         }
 
+        .links {
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          gap: 1em;
+          cursor: pointer;
+          font-size: 1.2em;
+        }
+
         @media only screen and (max-width: 600px) {
-          .image {
-            width: 200px;
-            height: 200px;
+          .info {
+            flex-direction: column;
           }
         }
       `}</style>
