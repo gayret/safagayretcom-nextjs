@@ -18,10 +18,9 @@ function Home() {
           </div>
           <div className='text'>
             <h1 className='name'>Safa Gayret</h1>
-            <span className='role'>Frontend Developer</span>
+            <span className='role'>Yazılım Mühendisi</span>
             <div className='description'>
-              <p>Lise ve Üniversite&apos;de Bilgisayar Programcılığı okudum.</p>
-              <p>Uzmanlık alanım JavaScript, VueJS, ReactJS, HTML ve CSS.</p>
+              <p>Uzmanlık alanım JavaScript, VueJS, ReactJS, HTML, CSS.</p>
             </div>
 
             <div className='links'>
