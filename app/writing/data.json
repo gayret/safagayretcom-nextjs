@@ -1,0 +1,30 @@
+[
+    {
+        "texts": [
+            "Twitter'da yazmaya başladım."
+        ],
+        "link": "https://x.com/safa",
+        "date": "2009"
+    },
+    {
+        "texts": [
+            "Blog tutmaya başladım."
+        ],
+        "link": "https://safagayret.blogspot.com",
+        "date": "2010"
+    },
+    {
+        "texts": [
+            "Medium.com'da yazılımla ilgili teknik makaleler yazmaya başladım"
+        ],
+        "link": "https://safa.medium.com",
+        "date": "2019"
+    },
+    {
+        "texts": [
+            "'Erken bulunmuş bir intihar mektubu' romanım yayınlandı."
+        ],
+        "link": "https://www.kitapyurdu.com/kitap/erken-bulunmus-bir-intihar-mektubu-/561410.html",
+        "date": "2020"
+    }
+]
