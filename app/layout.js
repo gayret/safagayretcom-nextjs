@@ -5,22 +5,44 @@ import github from './assets/img/github.svg'
 import twitter from './assets/img/twitter.svg'
 import medium from './assets/img/medium.svg'
 import Image from "next/image";
+import { Hedvig_Letters_Sans } from 'next/font/google'
+const inter = Hedvig_Letters_Sans({ subsets: ['latin'], weight: '400' })
 
 export const metadata = {
   title: "Safa Gayret",
   description: "Safa Gayret'in kişisel web sayfası",
 };
 
+const navLinks = [
+  {
+    path: '/',
+    text: 'Merhaba!'
+  },
+  {
+    path: '/code',
+    text: 'Kod',
+  },
+  {
+    path: '/software-articles',
+    text: 'Yazılımla ilgili bazı makalelerim'
+  },
+  {
+    path: '/movie',
+    text: 'Film'
+  },
+  {
+    path: '/writing',
+    text: 'Yazı'
+  }
+]
+
 export default function RootLayout({ children }) {
   return (
     <html lang="tr">
-      <body>
+      <body className={inter.className}>
         <header>
           <nav>
-            <Link href={'/'}>֎</Link>
-            <Link href={'/code'}>Kod</Link>
-            <Link href={'/movie'}>Film</Link>
-            <Link href={'/writing'}>Yazı</Link>
+            {navLinks.map((navLink) => <Link key={navLink.text} href={navLink.path}>{navLink.text}</Link>)}
           </nav>
         </header>
 
