@@ -152,7 +152,7 @@ p {
   margin-top: .5rem;
 
   &+.time-line-card {
-    margin-top: 3rem;
+    margin-top: 2rem;
   }
 
   & .time-line-card-date {
