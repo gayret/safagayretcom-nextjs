@@ -25,8 +25,6 @@ base('movie').select({ view: "Grid view" }).eachPage(function page(records, fetc
 
     result = Object.values(reduced).reverse();
 
-    console.log('result', result)
-
     fetchNextPage();
 }, function done(err) {
     if (err) { console.error(err); return; }
