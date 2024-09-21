@@ -54,7 +54,6 @@ main {
 
 .bordered {
   position: relative;
-  width: 270px;
   background-color: #fff;
   padding: 2rem;
   box-shadow: inset 2px 2px 5px 0px #eeebeb;
