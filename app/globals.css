@@ -14,10 +14,10 @@ a {
   text-decoration: none;
   color: rgb(2, 77, 107);
   font-weight: bold;
+}
 
-  &:hover {
-    color: skyblue;
-  }
+a:hover {
+  color: skyblue;
 }
 
 header {
@@ -199,13 +199,9 @@ footer:hover::before {
     border: none;
   }
 
-
-  header {
-
-    nav {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-    }
+  header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 }
