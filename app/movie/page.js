@@ -1,34 +1,23 @@
-import TimeLineCard from '../components/TimeLineCard/timeLineCard'
-import Airtable from 'airtable'
+import TimeLineCard from "../components/TimeLineCard/timeLineCard";
+import { fetchAirtableTable } from "../lib/airtable";
 
-export const revalidate = 3600
+export const revalidate = 3600;
 
 export default async function Movie() {
-    const movie = []
-    let result = []
-    // Airtable data fetcher
-    const base = new Airtable({ apiKey: process.env.AIRTABLE_API_KEY }).base(process.env.AIRTABLE_BASE);
-    const records = await base('movie').select({ view: "Grid view" }).all();
-    records.forEach(function (record) {
-        movie.push({
-            date: record.get('date'),
-            text: record.get('text'),
-            link: record.get('link')
-        })
-    });
+  const data = await fetchAirtableTable("movie");
 
-    const reduced = movie.reduce((acc, curr) => {
-        if (!acc[curr.date]) {
-            acc[curr.date] = { date: curr.date, link: curr.link, texts: [] };
-        }
-        acc[curr.date].texts.push(curr.text);
-        return acc;
-    }, {});
+  return (
+    <div className="bordered">
+      <h1>Film</h1>
 
-    result = Object.values(reduced).reverse();
-
-    return (<div className="bordered">
-        <h1>Film</h1>
-        {result.map((time) => <TimeLineCard key={time.texts} texts={time.texts} date={time.date} link={time.link} />)}
-    </div>)
+      {data.map((time) => (
+        <TimeLineCard
+          key={time.texts}
+          texts={time.texts}
+          date={time.date}
+          link={time.link}
+        />
+      ))}
+    </div>
+  );
 }

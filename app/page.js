@@ -1,5 +1,5 @@
-import Image from 'next/image';
-import ProfilePicture from './assets/img/profile.webp'
+import Image from "next/image";
+import ProfilePicture from "./assets/img/profile.webp";
 
 export default function Home() {
   return (

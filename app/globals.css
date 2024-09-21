@@ -31,15 +31,15 @@ header {
 header nav {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: .5rem;
+  gap: 0.5rem;
   padding: 1rem;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 header nav a {
   border: 1px solid lightgray;
-  border-radius: .3rem;
-  padding: .1rem .3rem;
+  border-radius: 0.3rem;
+  padding: 0.1rem 0.3rem;
   font-weight: 400;
 }
 
@@ -60,7 +60,7 @@ main {
 }
 
 .bordered::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 30px;
   height: 30px;
@@ -99,10 +99,15 @@ main {
   margin-bottom: 0;
 }
 
+.image-and-text p {
+  margin-top: 0.5rem;
+  color: lightgray;
+}
+
 p {
   all: unset;
   display: block;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .time-line-card {
@@ -110,11 +115,11 @@ p {
   border: 1px solid rgb(235, 235, 235);
   display: grid;
   position: relative;
-  transition: all .2s ease-in-out;
-  margin-top: .5rem;
+  transition: all 0.2s ease-in-out;
+  margin-top: 0.5rem;
 }
 
-.time-line-card+.time-line-card {
+.time-line-card + .time-line-card {
   margin-top: 2rem;
 }
 
@@ -122,26 +127,26 @@ p {
   position: absolute;
   background-color: #fff;
   padding-inline: 1rem;
-  top: -.5rem;
-  right: .5rem;
+  top: -0.5rem;
+  right: 0.5rem;
   color: lightgray;
-  font-size: .7rem;
+  font-size: 0.7rem;
 }
 
 .time-line-card .time-line-card-text {
-  padding-left: .5rem;
+  padding-left: 0.5rem;
   margin-top: 1rem;
   position: relative;
 }
 
 .time-line-card .time-line-card-text::before {
-  content: '';
+  content: "";
   width: 5px;
   height: 5px;
   background-color: skyblue;
   position: absolute;
-  left: -.2rem;
-  top: .2rem;
+  left: -0.2rem;
+  top: 0.2rem;
   transform: rotate(45deg);
   transition: all 1s ease-in-out;
 }
@@ -156,7 +161,7 @@ p {
 }
 
 footer {
-  font-size: .7rem;
+  font-size: 0.7rem;
   padding: 1rem;
   position: relative;
 }
@@ -169,11 +174,11 @@ footer .social-links {
 }
 
 footer .social-links a:hover {
-  opacity: .2;
+  opacity: 0.2;
 }
 
 footer::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 50px;
   height: 30px;

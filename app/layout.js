@@ -1,12 +1,12 @@
 import Link from "next/link";
 import "./globals.css";
-import linkedin from './assets/img/linkedin.svg'
-import github from './assets/img/github.svg'
-import twitter from './assets/img/twitter.svg'
-import medium from './assets/img/medium.svg'
+import linkedin from "./assets/img/linkedin.svg";
+import github from "./assets/img/github.svg";
+import twitter from "./assets/img/twitter.svg";
+import medium from "./assets/img/medium.svg";
 import Image from "next/image";
-import { Hedvig_Letters_Sans } from 'next/font/google'
-const inter = Hedvig_Letters_Sans({ subsets: ['latin'], weight: '400' })
+import { Hedvig_Letters_Sans } from "next/font/google";
+const inter = Hedvig_Letters_Sans({ subsets: ["latin"], weight: "400" });
 
 export const metadata = {
   title: "Safa Gayret",
@@ -15,26 +15,26 @@ export const metadata = {
 
 const navLinks = [
   {
-    path: '/',
-    text: 'Merhaba!'
+    path: "/",
+    text: "Merhaba!",
   },
   {
-    path: '/code',
-    text: 'Kod',
+    path: "/code",
+    text: "Kod",
   },
   {
-    path: '/software-articles',
-    text: 'Yazılımla ilgili bazı makalelerim'
+    path: "/software-articles",
+    text: "Yazılımla ilgili bazı makalelerim",
   },
   {
-    path: '/movie',
-    text: 'Film'
+    path: "/movie",
+    text: "Film",
   },
   {
-    path: '/writing',
-    text: 'Yazı'
-  }
-]
+    path: "/writing",
+    text: "Yazı",
+  },
+];
 
 export default function RootLayout({ children }) {
   return (
@@ -42,13 +42,15 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <header>
           <nav>
-            {navLinks.map((navLink) => <Link key={navLink.text} href={navLink.path}>{navLink.text}</Link>)}
+            {navLinks.map((navLink) => (
+              <Link key={navLink.text} href={navLink.path}>
+                {navLink.text}
+              </Link>
+            ))}
           </nav>
         </header>
 
-        <main>
-          {children}
-        </main>
+        <main>{children}</main>
 
         <footer>
           <div className="social-links">
@@ -67,11 +69,12 @@ export default function RootLayout({ children }) {
           </div>
 
           <div className="description">
-            Bu sitenin kodlarına <a href="https://github.com/gayret/safagayretcom-nextjs">GitHub</a>&apos;dan erişilebilir.
+            Bu sitenin kodlarına{" "}
+            <a href="https://github.com/gayret/safagayretcom-nextjs">GitHub</a>
+            &apos;dan erişilebilir.
           </div>
         </footer>
       </body>
-
     </html>
   );
 }
