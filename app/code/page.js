@@ -1,6 +1,8 @@
 import TimeLineCard from '../components/TimeLineCard/timeLineCard'
 import Airtable from 'airtable'
 
+export const revalidate = 60
+
 const code = []
 let result = []
 
