@@ -1,7 +1,7 @@
 import TimeLineCard from '../components/TimeLineCard/timeLineCard'
 import Airtable from 'airtable'
 
-export const revalidate = 60
+export const revalidate = 3600
 
 export default async function Writing() {
     const writing = []
