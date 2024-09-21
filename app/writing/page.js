@@ -1,14 +1,15 @@
 import TimeLineCard from '../components/TimeLineCard/timeLineCard'
 import Airtable from 'airtable'
 
-export const revalidate = 3600
+export const revalidate = 60
 
-const writing = []
-let result = []
+export default async function Writing() {
+    const writing = []
+    let result = []
 
-// Airtable data fetcher
-const base = new Airtable({ apiKey: process.env.AIRTABLE_API_KEY }).base(process.env.AIRTABLE_BASE);
-base('writing').select({ view: "Grid view" }).eachPage(function page(records, fetchNextPage) {
+    // Airtable data fetcher
+    const base = new Airtable({ apiKey: process.env.AIRTABLE_API_KEY }).base(process.env.AIRTABLE_BASE);
+    const records = await base('writing').select({ view: "Grid view" }).all();
     records.forEach(function (record) {
         writing.push({
             date: record.get('date'),
@@ -27,14 +28,8 @@ base('writing').select({ view: "Grid view" }).eachPage(function page(records, fe
 
     result = Object.values(reduced).reverse();
 
-    fetchNextPage();
-}, function done(err) {
-    if (err) { console.error(err); return; }
-})
-
-export default function Writing() {
     return (<div className="bordered">
-        <h1>Yazı, Kitap</h1>
+        <h1>Yazılımla ilgili bazı makalelerim</h1>
         {result.map((time) => <TimeLineCard key={time.texts} texts={time.texts} date={time.date} link={time.link} />)}
     </div>)
 }

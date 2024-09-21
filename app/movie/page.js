@@ -1,14 +1,14 @@
 import TimeLineCard from '../components/TimeLineCard/timeLineCard'
 import Airtable from 'airtable'
 
-export const revalidate = 3600
+export const revalidate = 60
 
-const movie = []
-let result = []
-
-// Airtable data fetcher
-const base = new Airtable({ apiKey: process.env.AIRTABLE_API_KEY }).base(process.env.AIRTABLE_BASE);
-base('movie').select({ view: "Grid view" }).eachPage(function page(records, fetchNextPage) {
+export default async function Movie() {
+    const movie = []
+    let result = []
+    // Airtable data fetcher
+    const base = new Airtable({ apiKey: process.env.AIRTABLE_API_KEY }).base(process.env.AIRTABLE_BASE);
+    const records = await base('movie').select({ view: "Grid view" }).all();
     records.forEach(function (record) {
         movie.push({
             date: record.get('date'),
@@ -27,12 +27,6 @@ base('movie').select({ view: "Grid view" }).eachPage(function page(records, fetc
 
     result = Object.values(reduced).reverse();
 
-    fetchNextPage();
-}, function done(err) {
-    if (err) { console.error(err); return; }
-})
-
-export default function Movie() {
     return (<div className="bordered">
         <h1>Film</h1>
         {result.map((time) => <TimeLineCard key={time.texts} texts={time.texts} date={time.date} link={time.link} />)}

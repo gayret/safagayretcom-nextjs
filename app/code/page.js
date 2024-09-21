@@ -1,14 +1,15 @@
 import TimeLineCard from '../components/TimeLineCard/timeLineCard'
 import Airtable from 'airtable'
 
-export const revalidate = 3600
+export const revalidate = 60
 
-const code = []
-let result = []
+export default async function Code() {
+    const code = []
+    let result = []
 
-// Airtable data fetcher
-const base = new Airtable({ apiKey: process.env.AIRTABLE_API_KEY }).base(process.env.AIRTABLE_BASE);
-base('code').select({ view: "Grid view" }).eachPage(function page(records, fetchNextPage) {
+    // Airtable data fetcher
+    const base = new Airtable({ apiKey: process.env.AIRTABLE_API_KEY }).base(process.env.AIRTABLE_BASE);
+    const records = await base('code').select({ view: "Grid view" }).all();
     records.forEach(function (record) {
         code.push({
             date: record.get('date'),
@@ -27,12 +28,6 @@ base('code').select({ view: "Grid view" }).eachPage(function page(records, fetch
 
     result = Object.values(reduced).reverse();
 
-    fetchNextPage();
-}, function done(err) {
-    if (err) { console.error(err); return; }
-})
-
-export default function Code() {
     return (<div className="bordered">
         <h1>Kod</h1>
         {result.map((time) => <TimeLineCard key={time.texts} texts={time.texts} date={time.date} link={time.link} />)}
