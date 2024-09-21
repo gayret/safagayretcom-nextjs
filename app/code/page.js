@@ -10,19 +10,20 @@ base('code').select({ view: "Grid view" }).eachPage(function page(records, fetch
     records.forEach(function (record) {
         code.push({
             date: record.get('date'),
-            text: record.get('text')
+            text: record.get('text'),
+            link: record.get('link')
         })
     });
 
     const reduced = code.reduce((acc, curr) => {
         if (!acc[curr.date]) {
-            acc[curr.date] = { date: curr.date, texts: [] };
+            acc[curr.date] = { date: curr.date, link: curr.link, texts: [] };
         }
         acc[curr.date].texts.push(curr.text);
         return acc;
     }, {});
 
-    result = Object.values(reduced);
+    result = Object.values(reduced).reverse();
 
     fetchNextPage();
 }, function done(err) {
