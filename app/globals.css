@@ -119,6 +119,10 @@ p {
   margin-top: 0.5rem;
 }
 
+.time-line-card a {
+  margin: auto;
+}
+
 .time-line-card + .time-line-card {
   margin-top: 2rem;
 }

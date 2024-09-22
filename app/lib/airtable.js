@@ -1,19 +1,17 @@
-import Airtable from "airtable"
+import Airtable from "airtable";
 
 const fetchAirtableTable = async (tableName) => {
   const base = new Airtable({ apiKey: process.env.AIRTABLE_API_KEY }).base(
     process.env.AIRTABLE_BASE
   );
 
-  const records = await base(tableName)
-    .select({ view: "Grid view" })
-    .all();
+  const records = await base(tableName).select({ view: "Grid view" }).all();
 
   const groupedRecords = records.reduce((accum, current) => {
-    const { date, text, link } = current.fields;
+    const { date, text, link, img } = current.fields;
 
     if (!accum[date]) {
-      accum[date] = { date, link, texts: [] };
+      accum[date] = { date, link, texts: [], img };
     }
 
     accum[date].texts.push(text);
@@ -24,4 +22,4 @@ const fetchAirtableTable = async (tableName) => {
   return Object.values(groupedRecords).reverse();
 };
 
-export {fetchAirtableTable}
+export { fetchAirtableTable };
