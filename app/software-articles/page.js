@@ -16,7 +16,6 @@ export default async function SoftwareArticles() {
           texts={time.texts}
           date={time.date}
           link={time.link}
-          img={time.img}
         />
       ))}
     </div>

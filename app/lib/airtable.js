@@ -8,10 +8,10 @@ const fetchAirtableTable = async (tableName) => {
   const records = await base(tableName).select({ view: "Grid view" }).all();
 
   const groupedRecords = records.reduce((accum, current) => {
-    const { date, text, link, img } = current.fields;
+    const { date, text, link } = current.fields;
 
     if (!accum[date]) {
-      accum[date] = { date, link, texts: [], img };
+      accum[date] = { date, link, texts: [] };
     }
 
     accum[date].texts.push(text);
