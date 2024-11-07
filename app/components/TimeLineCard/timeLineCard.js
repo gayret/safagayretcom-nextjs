@@ -1,24 +1,25 @@
-import Image from "next/image";
-import linkSvg from "../../assets/img/link.svg";
-import Link from "next/link";
+import Image from 'next/image'
+import linkSvg from '../../assets/img/link.svg'
+import Link from 'next/link'
 
-export default function TimeLineCard({ texts, date, link }) {
+export default function TimeLineCard({ texts, date, link, description }) {
   return (
-    <div className="time-line-card">
-      <span className="time-line-card-date">{date}</span>
+    <div className='time-line-card'>
+      <span className='time-line-card-date'>{date}</span>
       {texts.map((t) => (
-        <p key={t} className="time-line-card-text">
+        <p key={t} className='time-line-card-text'>
           {t}
+          {description && <p className='time-line-card-description'>{description}</p>}
         </p>
       ))}
 
-      <div className="time-line-footer">
+      <div className='time-line-footer'>
         {link && (
-          <Link href={link} target="_blank">
-            <Image src={linkSvg} alt="link" width={15} />
+          <Link href={link} target='_blank'>
+            <Image src={linkSvg} alt='link' width={15} />
           </Link>
         )}
       </div>
     </div>
-  );
+  )
 }

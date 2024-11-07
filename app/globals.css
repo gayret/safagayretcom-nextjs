@@ -31,7 +31,7 @@ header {
 header nav {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 0.5rem;
+  grid-gap: 1rem;
   padding: 1rem;
   font-size: 0.8rem;
 }
@@ -60,7 +60,7 @@ main {
 }
 
 .bordered::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 30px;
   height: 30px;
@@ -144,7 +144,7 @@ p {
 }
 
 .time-line-card .time-line-card-text::before {
-  content: "";
+  content: '';
   width: 5px;
   height: 5px;
   background-color: skyblue;
@@ -158,6 +158,11 @@ p {
 .time-line-card .time-line-card-text:hover::before {
   transform: rotate(360deg);
   box-shadow: 0px 0px 1px 0px #e8e4e3;
+}
+
+.time-line-card .time-line-card-description {
+  margin-top: 0.5rem;
+  color: #8f8f8f;
 }
 
 .time-line-card .time-line-footer {
@@ -182,7 +187,7 @@ footer .social-links a:hover {
 }
 
 footer::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 50px;
   height: 30px;
