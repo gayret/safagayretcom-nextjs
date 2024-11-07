@@ -1,9 +1,11 @@
 'use client'
 import Link from 'next/link'
 import { useState } from 'react'
+import { usePathname } from 'next/navigation'
 
 export default function Header() {
-  const [activePath, setActivePath] = useState(window.location.pathname)
+  const pathname = usePathname()
+  const [activePath, setActivePath] = useState(pathname)
 
   const isActive = (path) => path === activePath
 
