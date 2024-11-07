@@ -1,13 +1,10 @@
 'use client'
 import Link from 'next/link'
-import { useState } from 'react'
 import { usePathname } from 'next/navigation'
 
 export default function Header() {
   const pathname = usePathname()
-  const [activePath, setActivePath] = useState(pathname)
-
-  const isActive = (path) => path === activePath
+  const isActive = (path) => path === pathname
 
   const navLinks = [
     {
@@ -40,12 +37,7 @@ export default function Header() {
     <header>
       <nav>
         {navLinks.map((navLink) => (
-          <Link
-            key={navLink.path}
-            href={navLink.path}
-            data-route-active={isActive(navLink.path)}
-            onClick={() => setActivePath(navLink.path)}
-          >
+          <Link key={navLink.path} href={navLink.path} data-route-active={isActive(navLink.path)}>
             {navLink.text}
           </Link>
         ))}
