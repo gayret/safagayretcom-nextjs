@@ -1,6 +1,5 @@
 import TimeLineCard from '../components/TimeLineCard/timeLineCard'
 import { fetchAirtableTable } from '../lib/airtable'
-import Link from 'next/link'
 
 export const revalidate = 3600
 
