@@ -3,7 +3,7 @@ import { fetchAirtableTable } from '../lib/airtable'
 
 export const revalidate = 3600
 
-export default async function SoftwareArticles() {
+export default async function Projects() {
   const data = await fetchAirtableTable('projects')
 
   return (

@@ -12,16 +12,16 @@ export default function Header() {
       text: 'Merhaba!',
     },
     {
+      path: '/blog',
+      text: 'Blog',
+    },
+    {
       path: '/code',
       text: 'Kod',
     },
     {
       path: '/projects',
       text: 'Projelerim',
-    },
-    {
-      path: '/software-articles',
-      text: 'Yazılımla ilgili bazı makalelerim',
     },
     {
       path: '/movie',
