@@ -8,8 +8,7 @@ export default async function Blog() {
 
   return (
     <div className='bordered'>
-      <h1>Blog</h1>
-      <p>Yazılımla ilgili yazılarım</p>
+      <p>Yazılımla ilgili bazı yazılarım</p>
       {data.map((time) => (
         <TimeLineCard key={time.texts} texts={time.texts} date={time.date} link={time.link} />
       ))}

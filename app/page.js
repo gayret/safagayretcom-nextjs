@@ -1,13 +1,11 @@
-import Image from 'next/image'
-import ProfilePicture from './assets/img/profile.webp'
+import Profile from './components/Profile/Profile'
+import Blog from './blog/page'
 
 export default function Home() {
   return (
-    <section className='bordered image-and-text'>
-      <Image src={ProfilePicture} alt='profile picture' />
-      <h1>Safa Gayret</h1>
-      <small>Yazılım Mühendisi</small>
-      <p>JavaScript, ReactJS, VueJS, NextJS</p>
-    </section>
+    <>
+      <Profile />
+      <Blog />
+    </>
   )
 }
