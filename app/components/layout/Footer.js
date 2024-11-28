@@ -3,6 +3,7 @@ import linkedin from '../../assets/img/linkedin.svg'
 import github from '../../assets/img/github.svg'
 import twitter from '../../assets/img/twitter.svg'
 import medium from '../../assets/img/medium.svg'
+import bluesky from '../../assets/img/bluesky.svg'
 
 export default function Footer() {
   return (
@@ -19,6 +20,9 @@ export default function Footer() {
         </a>
         <a href='https://safa.medium.com'>
           <Image src={medium} width='15' alt='medium' />
+        </a>
+        <a href='https://bsky.app/profile/safagayret.bsky.social'>
+          <Image src={bluesky} width='15' alt='bluesky' />
         </a>
       </div>
 
