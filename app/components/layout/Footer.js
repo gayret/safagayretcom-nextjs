@@ -4,10 +4,12 @@ import github from '../../assets/img/github.svg'
 import twitter from '../../assets/img/twitter.svg'
 import medium from '../../assets/img/medium.svg'
 import bluesky from '../../assets/img/bluesky.svg'
+import Quote from '../Quote/Quote'
 
 export default function Footer() {
   return (
     <footer>
+      <Quote />
       <div className='social-links'>
         <a href='https://www.linkedin.com/in/safagayret'>
           <Image src={linkedin} width='15' alt='linkedin' />

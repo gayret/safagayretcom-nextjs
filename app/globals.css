@@ -186,26 +186,6 @@ footer .social-links a:hover {
   opacity: 0.2;
 }
 
-footer::before {
-  content: '';
-  position: absolute;
-  width: 50px;
-  height: 30px;
-  top: -1rem;
-  left: 1rem;
-  z-index: -1;
-  border: 5px solid #f3f3f3;
-  background-color: rgb(77, 240, 156);
-  box-shadow: 4px 3px 1px 0px #e8e4e3;
-  transition: all 4s ease-in-out;
-}
-
-footer:hover::before {
-  rotate: 360deg;
-  background-color: #fff;
-  box-shadow: 0px 0px 1px 0px #e8e4e3;
-}
-
 [data-route-active='true'] {
   opacity: 0.3;
 }
@@ -245,4 +225,30 @@ footer:hover::before {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+blockquote {
+  margin-inline: auto;
+  max-width: 400px;
+  margin-block: 2rem;
+  position: relative;
+}
+
+blockquote p {
+  font-style: italic;
+  line-height: 1.5rem;
+}
+
+blockquote cite {
+  display: block;
+  text-align: right;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+blockquote img {
+  margin-inline: auto;
+  mix-blend-mode: darken;
 }

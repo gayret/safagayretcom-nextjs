@@ -7,10 +7,10 @@ export default function TimeLineCard({ texts, date, link, description }) {
     <div className='time-line-card'>
       <span className='time-line-card-date'>{date}</span>
       {texts.map((t) => (
-        <p key={t} className='time-line-card-text'>
+        <div key={t} className='time-line-card-text'>
           {t}
           {description && <p className='time-line-card-description'>{description}</p>}
-        </p>
+        </div>
       ))}
 
       <div className='time-line-footer'>
