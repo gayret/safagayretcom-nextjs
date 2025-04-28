@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import invitationImage from '../assets/img/davetiye.jpg'
+import invitationImage from '../assets/img/davetiye.JPG'
 
 export default function Davet() {
   return (
