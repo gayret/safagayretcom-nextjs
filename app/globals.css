@@ -90,8 +90,8 @@ main {
 }
 
 .image-and-text img {
-  width: 230px;
-  height: auto;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
 }
 
