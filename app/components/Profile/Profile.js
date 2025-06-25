@@ -7,7 +7,7 @@ export default function Profile() {
       <Image src={ProfilePicture} alt='profile picture' />
       <h1>Safa Gayret</h1>
       <small>Yazılım Geliştirici</small>
-      <p>JavaScript, ReactJS, VueJS, NextJS, TypeScript</p>
+      <p>JavaScript, ReactJS, VueJS, TypeScript</p>
     </section>
   )
 }
