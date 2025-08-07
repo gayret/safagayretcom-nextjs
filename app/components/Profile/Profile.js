@@ -6,7 +6,7 @@ export default function Profile() {
     <section className='profile-box image-and-text'>
       <Image src={ProfilePicture} alt='profile picture' />
       <h1>Safa Gayret</h1>
-      <small>Yazılım Geliştirici</small>
+      <small>Kıdemli Yazılım Geliştirme Uzmanı</small>
       <p>JavaScript, ReactJS, VueJS, TypeScript</p>
     </section>
   )
