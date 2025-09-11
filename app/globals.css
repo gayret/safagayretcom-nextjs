@@ -266,6 +266,7 @@ blockquote img {
   gap: 0.6rem;
   transition: all 0.5s ease-in-out;
   border-radius: 0.5rem;
+  margin-bottom: 0.8rem;
 }
 
 .book:hover {
