@@ -257,3 +257,17 @@ blockquote img {
 .center {
   text-align: center;
 }
+
+.book {
+  display: grid;
+  place-items: center;
+  border: 1px solid lightgray;
+  padding: 0.5rem;
+  gap: 0.6rem;
+  transition: all 0.5s ease-in-out;
+  border-radius: 0.5rem;
+}
+
+.book:hover {
+  opacity: 0.8;
+}
