@@ -6,16 +6,28 @@ export default function Quote() {
   const randomQuote = quotes[Math.floor(Math.random() * quotes.length)]
 
   return (
-    <blockquote>
-      <Image
-        src={ATATURK}
-        alt='Mustafa Kemal Atatürk'
-        width={100}
-        height={150}
-        style={{ borderRadius: '50%' }}
-      />
-      <p>{randomQuote.quote}</p>
-      <cite>{randomQuote.author}</cite>
-    </blockquote>
+    <div
+      style={{
+        width: '100%',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        padding: '1rem',
+        background: '#fff',
+      }}
+    >
+      <div
+        style={{ backgroundColor: 'transparent', border: 'none' }}
+        data-ataturk-quote-widget
+        data-language='tr'
+        data-theme='light'
+      ></div>
+      <script
+        async
+        src='https://ataturk-kronolojisi.org/widget/quote.js'
+        data-language='tr'
+        data-theme='light'
+      ></script>
+    </div>
   )
 }
