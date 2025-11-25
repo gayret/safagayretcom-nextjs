@@ -13,7 +13,6 @@ export default function Quote() {
         justifyContent: 'center',
         alignItems: 'center',
         padding: '1rem',
-        background: '#fff',
       }}
     >
       <div
