@@ -1,23 +1,14 @@
-import TimeLineCard from "../components/TimeLineCard/timeLineCard";
-import { fetchAirtableTable } from "../lib/airtable";
-
-export const revalidate = 3600;
+import TimeLineCard from '../components/TimeLineCard/timeLineCard'
+import movieJSON from '../data/movie.json'
 
 export default async function Movie() {
-  const data = await fetchAirtableTable("movie");
-
   return (
-    <div className="bordered">
+    <div className='bordered'>
       <h1>Film</h1>
 
-      {data.map((time) => (
-        <TimeLineCard
-          key={time.texts}
-          texts={time.texts}
-          date={time.date}
-          link={time.link}
-        />
+      {movieJSON.map((time) => (
+        <TimeLineCard key={time.texts} texts={time.texts} date={time.date} link={time.link} />
       ))}
     </div>
-  );
+  )
 }

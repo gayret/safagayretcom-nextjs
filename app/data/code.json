@@ -1,0 +1,59 @@
+[
+  {
+    "texts": ["PayTR firmasında Senior Frontend Developer olarak çalışmaya başladım."],
+    "date": "9 Temmuz 2025"
+  },
+  {
+    "texts": ["usersdot firmasında Senior Frontend Developer olarak çalışmaya başladım."],
+    "date": "Aralık 2024"
+  },
+  {
+    "texts": ["Turkish Technology firmasında Frontend Developer olarak çalışmaya başladım."],
+    "date": "Eylül 2023"
+  },
+  {
+    "texts": ["Tekrom (T-Soft) firmasında Frontend Developer olarak çalışmaya başladım."],
+    "date": "2021"
+  },
+  {
+    "texts": [
+      "Hey Teknoloji firmasında Frontend Developer olarak çalışmaya başladım.",
+      "Medium.com'da yazılımla ilgili teknik makaleler yazmaya başladım."
+    ],
+    "date": "2020"
+  },
+  {
+    "texts": [
+      "C, Delphi, Java gibi diller hakkında fikir sahibi oldum.",
+      "GitHub'a üye oldum.",
+      "Yarı zamanlı olarak yakınlarıma basit web sayfalar geliştirmeye başladım."
+    ],
+    "date": "2013"
+  },
+  {
+    "texts": ["Sütçü İmam Üniversitesi'nde Bilgisayar Programcılığı eğitimime başladım."],
+    "date": "2012"
+  },
+  {
+    "texts": ["İlk web sayfamı (safagayret.com) geliştirip yayınladım."],
+    "date": "2009"
+  },
+  {
+    "texts": ["C# ve asp.NET ile tanıştım."],
+    "date": "2008"
+  },
+  {
+    "texts": [
+      "Kahramanmaraş Ticaret Meslek Lisesi'nde Bilgisayar Programcılığı eğitimime başladım.",
+      "HTML, CSS ve JS alanlarındaki bilgilerimi derinleştirmeye başladım."
+    ],
+    "date": "2007"
+  },
+  {
+    "texts": [
+      "'Yazılım' kelimesiyle tanıştım.",
+      "Microsoft FrontPage ile basit web arayüzler yapmayı öğrendim."
+    ],
+    "date": "2004"
+  }
+]

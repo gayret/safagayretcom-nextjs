@@ -1,0 +1,34 @@
+[
+  {
+    "texts": ["Atatürk Kronolojisi’nin Hikayesi, açık kaynağın gücü"],
+    "link": "https://safa.medium.com/atat%C3%BCrk-kronolojisinin-hikayesi-a%C3%A7%C4%B1k-kayna%C4%9F%C4%B1n-g%C3%BCc%C3%BC-5ccbb3da344e",
+    "date": "23 Aralık 2025"
+  },
+  {
+    "texts": ["Sesli pişirme asistanı, Cook Pilot"],
+    "link": "https://safa.medium.com/sesli-pi%C5%9Firme-asistan%C4%B1-cook-pilot-78cee5e3dafb",
+    "date": "1 Temmuz 2025"
+  },
+  {
+    "texts": ["VueJS ile global state kullanmadan modüler kodlama: Composables"],
+    "link": "https://safa.medium.com/vuejs-ile-global-state-kullanmadan-mod%C3%BCler-kodlama-composables-dc8fbbf8523d",
+    "date": "10 Aralık 2023"
+  },
+  {
+    "texts": [
+      "Komponent Tabanlı Yazılım Mühendisliğine Frontend Yaklaşımı: Komponent geliştirirken sık yapılan hatalar"
+    ],
+    "link": "https://safa.medium.com/komponent-tabanl%C4%B1-yaz%C4%B1l%C4%B1m-m%C3%BChendisli%C4%9Fine-frontend-yakla%C5%9F%C4%B1m%C4%B1-komponent-geli%C5%9Ftirirken-s%C4%B1k-yap%C4%B1lan-81eacce095ae",
+    "date": "4 Aralık 2023"
+  },
+  {
+    "texts": ["Tarayıcı Sekmeleri Arası İletişim: Broadcast Channel API"],
+    "link": "https://safa.medium.com/taray%C4%B1c%C4%B1-sekmeleri-aras%C4%B1-i%CC%87leti%C5%9Fim-broadcast-channel-api-bf25229a734c",
+    "date": "1 Ekim 2023"
+  },
+  {
+    "texts": ["VueJS’te kullanıcı tarafından yönetilebilir layout yapmak ve CSS Grid konsepti"],
+    "link": "https://safa.medium.com/vuejste-kullan%C4%B1c%C4%B1-taraf%C4%B1ndan-y%C3%B6netilebilir-layout-yapmak-ve-css-grid-konsepti-3a095d6fba9b",
+    "date": "24 Nisan 2022"
+  }
+]

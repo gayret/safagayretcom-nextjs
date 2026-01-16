@@ -1,16 +1,12 @@
 import TimeLineCard from '../components/TimeLineCard/timeLineCard'
-import { fetchAirtableTable } from '../lib/airtable'
-
-export const revalidate = 3600
+import projectsJSON from '../data/projects.json'
 
 export default async function Projects() {
-  const data = await fetchAirtableTable('projects')
-
   return (
     <div className='bordered'>
-      <h1>Projelerim</h1>
+      <h1>Bazı Projelerim</h1>
 
-      {data.map((time) => (
+      {projectsJSON.map((time) => (
         <TimeLineCard
           key={time.texts}
           texts={time.texts}

@@ -1,0 +1,31 @@
+[
+  {
+    "texts": ["Atatürk Kronolojisi"],
+    "link": "https://ataturk-kronolojisi.org",
+    "date": "4 Ağustos 2025"
+  },
+  {
+    "texts": ["Deprem Anıtı"],
+    "description": "Türkiye'deki depremlere ilişkin unutulmaması gerekenleri vurgulayan, yaşanacak sonraki depremler için farkındalık yaratmayı amaçlayan, yazı tahtası.",
+    "link": "https://deprem-aniti.vercel.app",
+    "date": "18 Kasım 2024"
+  },
+  {
+    "texts": ["Fake Chat for Movie"],
+    "description": "Filmlerde veya televizyon yapımlarında kullanılan sahte sohbet ekranlarının oluşturulmasını kolaylaştıran bir araç.",
+    "link": "https://fake-chat-for-movie.netlify.app",
+    "date": "21 haziran 2023"
+  },
+  {
+    "texts": ["samni"],
+    "description": "Yapay zeka rüya yorumcusu",
+    "link": "https://samni.vercel.app",
+    "date": "4 Ağustos 2025"
+  },
+  {
+    "texts": ["Form Builder"],
+    "description": "Sürükle bırak yöntemiyle form oluşturucu araç.",
+    "link": "https://form-builder-vuejs.netlify.app/",
+    "date": "29 Mart 2023"
+  }
+]
