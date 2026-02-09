@@ -1,6 +1,5 @@
 import Image from 'next/image'
-import ProfilePicture from '../../assets/img/ProfilePicture.webp'
-import Link from 'next/link'
+import ProfilePicture from '../../assets/img/ProfilePicture.png'
 
 export default function Profile() {
   return (
