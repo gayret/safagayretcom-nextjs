@@ -5,6 +5,12 @@
     "date": "4 Ağustos 2025"
   },
   {
+    "texts": ["bemirror"],
+    "description": "Swagger ve Postman alternatifi açık kaynaklı ürün",
+    "link": "https://www.npmjs.com/package/@safagayret/bemirror",
+    "date": "9 Nisan 2026"
+  },
+  {
     "texts": ["Deprem Anıtı"],
     "description": "Türkiye'deki depremlere ilişkin unutulmaması gerekenleri vurgulayan, yaşanacak sonraki depremler için farkındalık yaratmayı amaçlayan, yazı tahtası.",
     "link": "https://deprem-aniti.vercel.app",
