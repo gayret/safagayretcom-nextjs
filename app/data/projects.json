@@ -1,14 +1,20 @@
 [
   {
-    "texts": ["Atatürk Kronolojisi"],
-    "link": "https://ataturk-kronolojisi.org",
-    "date": "4 Ağustos 2025"
+    "texts": ["Error Reporter"],
+    "link": "https://www.npmjs.com/package/@safagayret/error-reporter",
+    "description": "Otomatik hata raporlayıcı NPM Paket",
+    "date": "15 Nisan 2025"
   },
   {
     "texts": ["bemirror"],
-    "description": "Swagger ve Postman alternatifi açık kaynaklı ürün",
+    "description": "Swagger ve Postman alternatifi açık kaynaklı NPM Paket",
     "link": "https://www.npmjs.com/package/@safagayret/bemirror",
     "date": "9 Nisan 2026"
+  },
+  {
+    "texts": ["Atatürk Kronolojisi"],
+    "link": "https://ataturk-kronolojisi.org",
+    "date": "4 Ağustos 2025"
   },
   {
     "texts": ["Deprem Anıtı"],
