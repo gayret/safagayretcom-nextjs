@@ -1,6 +1,4 @@
 import quotes from './quotes.json'
-import Image from 'next/image'
-import ATATURK from '../../assets/img/ATATURK.png'
 
 export default function Quote() {
   const randomQuote = quotes[Math.floor(Math.random() * quotes.length)]
@@ -20,6 +18,7 @@ export default function Quote() {
         data-ataturk-quote-widget
         data-language='tr'
         data-theme='light'
+        data-background-color='#f8f8f8'
       ></div>
       <script
         async

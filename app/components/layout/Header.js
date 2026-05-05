@@ -16,16 +16,16 @@ export default function Header() {
       text: 'Projelerim',
     },
     {
+      path: '/writing',
+      text: 'Yazı',
+    },
+    {
       path: '/code',
       text: 'Kod',
     },
     {
       path: '/movie',
       text: 'Film',
-    },
-    {
-      path: '/writing',
-      text: 'Yazı',
     },
   ]
 
